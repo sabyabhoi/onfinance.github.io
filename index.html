@@ -1,0 +1,627 @@
+<!doctype html>
+<html class="no-js" lang="zxx">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="author" content="Sumon Rahman">
+    <meta name="description" content="">
+    <meta name="keywords" content="HTML,CSS,XML,JavaScript">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Title -->
+    <title>OnFinance</title>
+    <!-- Place favicon.ico in the root directory -->
+    <link rel="apple-touch-icon" href="images/apple-touch-icon.png">
+    <link rel="shortcut icon" type="image/ico" href="images/favicon.ico" />
+    <!-- Plugin-CSS -->
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/owl.carousel.min.css">
+    <link rel="stylesheet" href="css/linearicons.css">
+    <link rel="stylesheet" href="css/magnific-popup.css">
+    <link rel="stylesheet" href="css/animate.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.1/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+
+    <!-- Main-Stylesheets -->
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="css/responsive.css">
+    <script src="js/vendor/modernizr-2.8.3.min.js"></script>
+    <!--[if lt IE 9]>
+        <script src="//oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+        <script src="//oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+</head>
+
+<script>
+    function postToGoogle() {
+        
+        var field = $("#Email").val();
+      
+
+        $.ajax({
+            url: "https://docs.google.com/forms/u/0/d/e/1FAIpQLScvzi1BFmYqKKuHrux71cN6IneV7G3YFdDBaJW1WlEslN6UMA/formResponse",
+
+            //add your google form generated numbers below which are also the 'names' of your inputs     
+            data: {
+                "entry.1959782008": field,
+               
+            },
+            type: "POST",
+            dataType: "xml",
+            success: function (d) {
+                $('#').trigger('reset');
+            },
+            error: function (x, y, z) {
+                $('#contact').trigger('reset');
+            }
+        });
+        return false;
+    }
+</script>
+
+<body data-spy="scroll" data-target=".mainmenu-area">
+    <!-- Preloader-content -->
+    <div class="preloader">
+        <span><i class="lnr lnr-sun"></i></span>
+    </div>
+    <!-- MainMenu-Area -->
+    <nav class="mainmenu-area" data-spy="affix" data-offset-top="200">
+        <div class="container-fluid">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#primary_menu">
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="#"><img src="images/mainlogo_transparent.png"Logo"></a>
+            </div>
+            <div class="collapse navbar-collapse" id="primary_menu">
+                <ul class="nav navbar-nav mainmenu">
+                    <li class="active"><a href="#home_page">Home</a></li>
+                    <li><a href="#about_page">About</a></li>
+                    <li><a href="#features_page">Features</a></li>
+                    <li><a href="#gallery_page">Gallery</a></li>
+                    <li><a href="#questions_page">FAQ</a></li>
+                    <li><a href="#contact_page">Contact Us</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <!-- MainMenu-Area-End -->
+    <!-- Home-Area -->
+    <header class="home-area overlay angle" id="home_page">
+        <div class="container">
+            <div class="row">
+                <div class="col-xs-12 hidden-sm col-md-5">
+                    <figure class="mobile-image wow fadeInUp" data-wow-delay="0.2s">
+                        <img src="images/onboarding1_screen.png" alt="",height="600" width="400">
+                    </figure>
+                </div>
+                <div class="col-xs-12 col-md-7">
+                    <div class="space-80 hidden-xs"></div>
+                    <h1 class="wow fadeInUp" data-wow-delay="0.4s">Start your journey <br>into finance with OnFinance.</h1>
+                    <div class="space-20"></div>
+                    <div class="desc wow fadeInUp" data-wow-delay="0.6s">
+                        <p>India's 1st Financial News & Information Intelligent Analytics App (powered by AI & NLP) which is a daily time saver for
+                        the retail investors, helping them simplify Investments Decision Making.</p>
+                    </div>
+                    <div class="space-20"></div>
+                    <a href="https://play.google.com/store/apps/details?id=com.onfinance.app" class="bttn-white wow fadeInUp" data-wow-delay="0.8s"><i class="lnr lnr-download"></i>Download App
+                    </a>
+                </div>
+            </div>
+        </div>
+    </header>
+    <!-- Home-Area-End -->
+    <!-- About-Area -->
+    <section class="section-padding" id="about_page">
+        <div class="container">
+            <div class="row">
+                <div class="col-xs-12 col-md-10 col-md-offset-1">
+                    <div class="page-title text-center">
+                        <img src="images/mainlogo_transparent.png" alt="About Logo" height="60" width="60">
+                        <div class="space-20"></div>
+                        <h5 class="title">About OnFinance</h5>
+                        <div class="space-30"></div>
+                        <h3 class="blue-color">Our Mission</h3>
+                        <div class="space-20"></div>
+                        <p>Millennials and GenZ want to manage their own money and our app helps them by solving for news volume, personalization and
+                        interpretability in real-time with hedge fund quality insights.</p>
+                        <h3 class="blue-color">Our Essence</h3>
+                        <div class="space-20"></div>
+                        <p>Covering the entire finance ecosystem including and not limited to equities, derivatives, commodities, cryptocurrencies,
+                        NFTS and DeFi protocols.</p>
+                        <h3 class="blue-color">Our Promise</h3>
+                        <div class="space-20"></div>
+                        <p>Providing real time insights driven by highly accurate AI & NLP models that you can leverage on the go.</p>
+                        <h3 class="blue-color">Our Vibe</h3>
+                        <div class="space-20"></div>
+                        <p>Building a community of like minded people that are new to the Investing space.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- About-Area-End -->
+    <!-- Progress-Area -->
+    <section class="progress-area gray-bg" id="progress_page">
+        <div class="container">
+            <div class="row">
+                <div class="col-xs-12 col-md-6">
+                    <div class="page-title section-padding">
+                        <h5 class="title wow fadeInUp" data-wow-delay="0.2s">Our Progress</h5>
+                        <div class="space-10"></div>
+                        <h3 class="dark-color wow fadeInUp" data-wow-delay="0.4s">What is OnFinance trying to Solve</h3>
+                        <div class="space-20"></div>
+                        <div class="desc wow fadeInUp" data-wow-delay="0.6s">
+                            <p>Democratizing intuitive financial insights reflecting the market's impact and performance.</p>
+                        </div>
+                        <div class="space-50"></div>
+                    </div>
+                </div>
+                <div class="col-xs-12 col-md-6">
+                    <figure class="mobile-image">
+                        <img src="images/onboarding2_screen.png" alt="",height="400" width="350">
+                    </figure>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Progress-Area-End -->
+    <!-- Video-Area -->
+    <section class="video-area section-padding">
+        <div class="container">
+            <div class="row">
+                <div class="col-xs-12 col-md-6">
+                    <div class="video-photo">
+                        <img src="images/video-image.jpg" alt="">
+                        <a href="https://www.youtube.com/watch?v=ScrDhTsX0EQ" class="popup video-button">
+                            <img src="images/play-button.png" alt="">
+                        </a>
+                    </div>
+                </div>
+                <div class="col-xs-12 col-md-5 col-md-offset-1">
+                    <div class="space-60 hidden visible-xs"></div>
+                    <div class="page-title">
+                        <h5 class="title wow fadeInUp" data-wow-delay="0.2s">VIDEO FEATURES</h5>
+                        <div class="space-10"></div>
+                        <h3 class="dark-color wow fadeInUp" data-wow-delay="0.4s">Grat Application Ever</h3>
+                        <div class="space-20"></div>
+                        <div class="desc wow fadeInUp" data-wow-delay="0.6s">
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiing elit, sed do eiusmod tempor incididunt ut labore et laborused sed do eiusmod tempor incididunt ut labore et laborused.</p>
+                        </div>
+                        <div class="space-50"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Video-Area-End -->
+    <!-- Feature-Area -->
+    <section class="feature-area section-padding-top" id="features_page">
+        <div class="container">
+            <div class="row">
+                <div class="col-xs-12 col-sm-8 col-sm-offset-2">
+                    <div class="page-title text-center">
+                        <h5 class="title">Features</h5>
+                        <div class="space-10"></div>
+                        <h3>OnFinance Highlights</h3>
+                        <div class="space-60"></div>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-xs-12 col-sm-6 col-md-4">
+                    <div class="service-box wow fadeInUp" data-wow-delay="0.2s">
+                        <div class="box-icon">
+                            <i class="lnr lnr-rocket"></i>
+                        </div>
+                        <h4>Easy to Use</h4>
+                        
+                    </div>
+                    <div class="space-60"></div>
+                    <div class="service-box wow fadeInUp" data-wow-delay="0.4s">
+                        <div class="box-icon">
+                            <i class="lnr lnr-paperclip"></i>
+                        </div>
+                        <h4>Quantative Analysis</h4>
+                      
+                    </div>
+                    <div class="space-60"></div>
+                    <div class="service-box wow fadeInUp" data-wow-delay="0.6s">
+                        <div class="box-icon">
+                            <i class="lnr lnr-cloud-download"></i>
+                        </div>
+                        <h4>Track Your Daily Actions</h4>
+                      
+                    </div>
+                    <div class="space-60"></div>
+                </div>
+                <div class="hidden-xs hidden-sm col-md-4">
+                    <figure class="mobile-image">
+                        <img src="images/Insights_screen.png" alt="Feature Photo">
+                    </figure>
+                </div>
+                <div class="col-xs-12 col-sm-6 col-md-4">
+                    <div class="service-box wow fadeInUp" data-wow-delay="0.2s">
+                        <div class="box-icon">
+                            <i class="lnr lnr-clock"></i>
+                        </div>
+                      
+                            <h4>AI &amp; NLP Backed</h4>
+                      
+                        
+                        
+                    </div>
+                    <div class="space-60"></div>
+                    <div class="service-box wow fadeInUp" data-wow-delay="0.4s">
+                        <div class="box-icon">
+                            <i class="lnr lnr-laptop-phone"></i>
+                        </div>
+                        <div class="space-30"></div>
+                        <h4>Qualitative Analysis</h4>
+                   
+                    </div>
+                    <div class="space-60"></div>
+                    <div class="service-box wow fadeInUp" data-wow-delay="0.6s">
+                        <div class="box-icon">
+                            <i class="lnr lnr-cog"></i>
+                        </div>
+                        <h4>Join our Community</h4>
+                       
+                    </div>
+                    <div class="space-60"></div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Feature-Area-End -->
+    <!-- Testimonial-Area -->
+    <section class="testimonial-area" id="testimonial_page">
+        <div class="container">
+            <div class="row">
+                <div class="col-xs-12">
+                    <div class="page-title text-center">
+                        <h5 class="title">About Us</h5>
+                        <h3 class="dark-color">The Team</h3>
+                        <div class="space-60"></div>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-xs-12">
+                    <div class="team-slide">
+                        <div class="team-box">
+                            <div class="team-image">
+                                <img src="images/team-1.png" alt="">
+                            </div>
+                            <h4>Dr.Anshul</h4>
+                            <h6 class="position">Core Founding Team Member</h6>
+                            <p>Forbes 30 under 30</p>
+                            <p>BITS Pilani|NYU</p>
+                        </div>
+                        <div class="team-box">
+                            <div class="team-image">
+                                <img src="images/team-2.jpg" alt="">
+                            </div>
+                            <h4>Anuj</h4>
+                            <h6 class="position">CEO & Founder</h6>
+                            <p>Investment Banking|Quant</p>
+                            <p>BITS Pilani</p>
+                        </div>
+                        <div class="team-box">
+                            <div class="team-image">
+                                <img src="images/team-3.jpg" alt="">
+                            </div>
+                            <h4>Priyesh</h4>
+                            <h6 class="position">CTO & Founder</h6>
+                            <p>Cloud Computing|Full Stack</p>
+                            <p>BITS Pilani</p>
+                        </div>
+                        <!-- <div class="team-box">
+                            <div class="team-image">
+                                <img src="images/team-1.png" alt="">
+                            </div>
+                            <h4>Ashekur Rahman</h4>
+                            <h6 class="position">Art Dirrector</h6>
+                            <p>Lorem ipsum dolor sit amet, conseg sed do eiusmod temput laborelaborus ed sed do eiusmod tempo.</p>
+                        </div>
+                        <div class="team-box">
+                            <div class="team-image">
+                                <img src="images/team-2.jpg" alt="">
+                            </div>
+                            <h4>Ashekur Rahman</h4>
+                            <h6 class="position">Art Dirrector</h6>
+                            <p>Lorem ipsum dolor sit amet, conseg sed do eiusmod temput laborelaborus ed sed do eiusmod tempo.</p>
+                        </div>
+                        <div class="team-box">
+                            <div class="team-image">
+                                <img src="images/team-3.jpg" alt="">
+                            </div>
+                            <h4>Ashekur Rahman</h4>
+                            <h6 class="position">Art Dirrector</h6>
+                            <p>Lorem ipsum dolor sit amet, conseg sed do eiusmod temput laborelaborus ed sed do eiusmod tempo.</p>
+                        </div> -->
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Testimonial-Area-End -->
+    <!-- Gallery-Area -->
+    <section class="gallery-area section-padding angle" id="gallery_page">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-xs-12 col-sm-6 gallery-slider">
+                    <div class="gallery-slide">
+                        <div class="item"><img src="images/newscards_screen.png" alt=""></div>
+                      
+                        <div class="item"><img src="images/signin_screen.png" alt=""></div>
+                        <div class="item"><img src="images/onboarding3_screen.png" alt=""></div>
+                        <div class="item"><img src="images/signup_screen.png" alt=""></div>
+                        <!-- <div class="item"><img src="images/gallery-1.jpg" alt=""></div>
+                        <div class="item"><img src="images/gallery-2.jpg" alt=""></div>
+                        <div class="item"><img src="images/gallery-3.jpg" alt=""></div>
+                        <div class="item"><img src="images/gallery-1.jpg" alt=""></div>
+                        <div class="item"><img src="images/gallery-2.jpg" alt=""></div>
+                        <div class="item"><img src="images/gallery-3.jpg" alt=""></div>
+                        <div class="item"><img src="images/gallery-4.jpg" alt=""></div>
+                        <div class="item"><img src="images/gallery-1.jpg" alt=""></div>
+                        <div class="item"><img src="images/gallery-2.jpg" alt=""></div>
+                        <div class="item"><img src="images/gallery-3.jpg" alt=""></div> -->
+                    </div>
+                </div>
+                <div class="col-xs-12 col-sm-5 col-lg-3">
+                    <div class="page-title">
+                        <h5 class="white-color title wow fadeInUp" data-wow-delay="0.2s">What OnFinance Offers</h5>
+                        <div class="space-10"></div>
+                        <h3 class="white-color wow fadeInUp" data-wow-delay="0.4s">A One-stop Destination</h3>
+                    </div>
+                    <div class="space-20"></div>
+                    <div class="desc wow fadeInUp" data-wow-delay="0.6s">
+                        <p>For the daily market news and content analytics covering over 40+ financial topics from more than 200+ sources optimized
+                        for the indian markets ecosystem.</p>
+                    </div>
+                    <div class="space-50"></div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Gallery-Area-End -->
+    <!-- How-To-Use -->
+    <section class="section-padding">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-8 d-flex align-items-center">
+                    <ul class="list-unstyled ui-steps">
+                        <li class="media" style="padding-left:5%; padding-top: 5%">
+                            <div class="circle-icon mr-4">1</div>
+                            <div class="media-body">
+                                <h3>Sign Up on our App</h3>
+                                
+                            </div>
+                        </li>
+                        <li class="media" style="padding-left:5%;">
+                            <div class="circle-icon mr-4">2</div>
+                            <div class="media-body">
+                                <h3>Take Informative Investment Decisions</h3>
+                                
+                            </div>
+                        </li>
+                        <li class="media" style="padding-left:5%;">
+                            <div class="circle-icon mr-4">3</div>
+                            <div class="media-body">
+                                <h3>Track Your Actions</h3>
+                                
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+                <div class="col-md-4">
+                    <img src="images/profile_screen.png" alt="iphone" class="img-fluid">
+                </div>
+
+            </div>
+    
+        </div>
+    </section>
+    <!-- How-To-Use-End -->
+    <!-- Download-Area -->
+    <div class="download-area overlay">
+        <div class="container">
+            <div class="row">
+                <div class="col-xs-12 col-sm-6 hidden-sm">
+                    <figure class="mobile-image">
+                        <img src="images/logo_screen.png" alt="",height="200" width="300">
+                    </figure>
+                </div>
+                <div class="col-xs-12 col-md-6 section-padding">
+                    <h3 class="white-color">Download The App</h3>
+                    <div class="space-20"></div>
+                    <p>Unleash the power of news, content and canny analytics to deliver healthy returns for your portfolio.</p>
+                    <div class="space-60"></div>
+                    <a href="https://play.google.com/store/apps/details?id=com.onfinance.app" class="bttn-white sq"><img src="images/play-store-icon.png" alt="Play Store Icon"> Play Store</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Download-Area-End -->
+    <!--Questions-Area -->
+    <section id="questions_page" class="questions-area section-padding" style="background:#fff;">
+        <div class="container">
+            <div class="row">
+                <div class="col-xs-12">
+                    <div class="page-title text-center">
+                        <h5 class="title">FAQ</h5>
+                        <h3 class="dark-color">Frequently Asked Questions</h3>
+                        <div class="space-60"></div>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-xs-12 col-sm-6">
+                    <div class="toggole-boxs">
+                        <h3>How does the referral program work? </h3>
+                        <div>
+                            <p>When you download the app for each friend you refer,you get one 
+                                entry into the quiz. Once you reach 3 lifetime referrals, the quiz 
+                                entry is free for you forever.Each subsequent referral will get you 
+                                a life that can be used to revive yourself during a quiz, in case you answer incorrectly.
+                            </p>
+                        </div>
+                        <h3>What does news sentiment means in terms of investing?</h3>
+                        <div>
+                            <p>All prize money is delivered into your account in 2-3 working days.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-xs-12 col-sm-6">
+                    <div class="space-20 hidden visible-xs"></div>
+                    <div class="toggole-boxs">
+                        <h3>There are many investing, common use and content apps, why should i choose OnFinance? </h3>
+                        <div>
+                            <p>
+                                Learning is awesome and fun, but definitely nothing beats earning while you learn. 
+                                Our various features such as quiz and contests encourage individuals to test and 
+                                hone their skills before entering the ruthless capital markets
+                            </p>
+                        </div>
+                        <h3>What is OnFinance?</h3>
+                        <div>
+                            <p>
+                                Simple! To increase the financial literacy and bring in more people into the world of investing. 
+                                We believe this can be achieved only by incentivizing the end user.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!--Questions-Area-End -->
+    <!-- Subscribe-Form -->
+    <div class="subscribe-area section-padding">
+        <div class="container">
+            <div class="row">
+                <div class="col-xs-12 col-sm-8 col-sm-offset-2">
+                    <div class="subscribe-form text-center">
+                        <h3 class="blue-color">Subscribe for latest updates</h3>
+                        <div class="space-20"></div>
+                        <form action="https://docs.google.com/forms/u/0/d/e/1FAIpQLScvzi1BFmYqKKuHrux71cN6IneV7G3YFdDBaJW1WlEslN6UMA/formResponse" >
+                            <input type="email" class="control" placeholder="Enter your email" required="required" name="entry.1959782008" id="mc-email">
+                            <button class="bttn-white active" type="submit"><span class="lnr lnr-location"></span> Subscribe</button>
+                            <label class="mt10" for="mc-email"></label>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Subscribe-Form-Area -->
+    <!-- Footer-Area -->
+    <footer class="footer-area" id="contact_page">
+        <div class="section-padding">
+            <div class="container">
+                <div class="row">
+                    <div class="col-xs-12">
+                        <div class="page-title text-center">
+                            <h5 class="title">Contact US</h5>
+                            <div class="space-60"></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-xs-12 col-sm-4">
+                        <div class="footer-box">
+                            <div class="box-icon">
+                                <span class="lnr lnr-map-marker"></span>
+                            </div>
+                            <p>India</p>
+                        </div>
+                        <div class="space-30 hidden visible-xs"></div>
+                    </div>
+                    <div class="col-xs-12 col-sm-4">
+                        <div class="footer-box">
+                            <div class="box-icon">
+                                <span class="lnr lnr-phone-handset"></span>
+                            </div>
+                            <p>+91 7233089282</p>
+                        </div>
+                        <div class="space-30 hidden visible-xs"></div>
+                    </div>
+                    <div class="col-xs-12 col-sm-4">
+                        <div class="footer-box">
+                            <div class="box-icon">
+                                <span class="lnr lnr-envelope"></span>
+                            </div>
+                            <p>info@onfinance.in
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="row" style="margin-top:10%;">
+                    <div class="col-xs-12">
+                        <div class="page-title text-center">
+                            <h5 class="title">Check us out at</h5>
+                            <div class="space-60"></div>
+                        </div>
+                    </div>
+                    <div class="col-xs-12 col-sm-3">
+                            <div class="footer-box">
+                                <a class="twitter " href="#"><i class="fab fa-twitter-square fa-4x" style="color:#38A1F3;"></i></a>
+                            </div>
+                            <div class="space-30 hidden visible-xs"></div>
+                        </div>
+                        <div class="col-xs-12 col-sm-3">
+                            <div class="footer-box">
+                                <a class="instagram" href="https://www.instagram.com/onfinance.in/" href="#"><i class="fab fa-instagram fa-4x" style="color:#8a3ab9"></i></i></a>
+                            </div>
+                            <div class="space-30 hidden visible-xs"></div>
+                        </div>
+                        <div class="col-xs-12 col-sm-3">
+                            <div class="footer-box">
+                                <a class="linkedin " href="https://www.linkedin.com/company/onfinanceofficial"><i class="fab fa-linkedin fa-4x" style="color:#0077B5;"></i></a>
+                            </div>
+                            <div class="space-30 hidden visible-xs"></div>
+                        </div>
+                        <div class="col-xs-12 col-sm-3">
+                            <div class="footer-box">
+                                <a class="youtube " href="https://www.youtube.com/channel/UCQp4TSCFyNE5DUIAErU1dkw"><i class="fab fa-youtube fa-4x" style="color:#AA2200;"></i></a>
+                            </div>
+                            <div class="space-30 hidden visible-xs"></div>
+                        </div>
+                        <div class="col-xs-12 text-center h4" style="margin-top:4%;">
+                            At OnFinance, we try to simplify the daily news, content, information and analytics on the markets on a real time basis
+                            and serve them to you on a hot platter.
+                        </div>
+                </div>
+            </div>
+        </div>
+        <!-- Footer-Bootom -->
+        <div class="footer-bottom">
+            <div class="container">
+                <div class="row">
+                    <div class="col-xs-12 col-md-5 text-center">
+            <span>Copyright &copy;<script>document.write(new Date().getFullYear());</script> All rights reserved | OnFinance
+                    </div>
+                </div>
+            </div>
+        </div> 
+        <!-- Footer-Bootom-End -->
+</footer>
+    <!--Vendor-JS-->
+    <script src="js/vendor/jquery-1.12.4.min.js"></script>
+    <script src="js/vendor/jquery-ui.js"></script>
+    <script src="js/vendor/bootstrap.min.js"></script>
+    <!--Plugin-JS-->
+    <script src="js/owl.carousel.min.js"></script>
+    <script src="js/contact-form.js"></script>
+    <script src="js/ajaxchimp.js"></script>
+    <script src="js/scrollUp.min.js"></script>
+    <script src="js/magnific-popup.min.js"></script>
+    <script src="js/wow.min.js"></script>
+    <!--Main-active-JS-->
+    <script src="js/main.js"></script>
+</body>
+
+</html>
