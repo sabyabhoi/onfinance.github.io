@@ -35,7 +35,7 @@
 <script>
     function postToGoogle() {
         
-        var field = $("#Email").val();
+        var field = $("#email").val();
       
 
         $.ajax({
@@ -49,14 +49,20 @@
             type: "POST",
             dataType: "xml",
             success: function (d) {
+                
                 $('#').trigger('reset');
+               
             },
             error: function (x, y, z) {
+                submitted
+
                 $('#contact').trigger('reset');
             }
         });
         return false;
     }
+
+ 
 </script>
 
 <body data-spy="scroll" data-target=".mainmenu-area">
@@ -161,7 +167,7 @@
                 </div>
                 <div class="col-xs-12 col-md-6">
                     <figure class="mobile-image">
-                        <img src="images/onboarding2_screen.png" alt="",height="400" width="350">
+                        <img src="images/newscards_screen.png" alt="",height="400" width="350">
                     </figure>
                 </div>
             </div>
@@ -169,7 +175,7 @@
     </section>
     <!-- Progress-Area-End -->
     <!-- Video-Area -->
-    <section class="video-area section-padding">
+    <!-- <section class="video-area section-padding">
         <div class="container">
             <div class="row">
                 <div class="col-xs-12 col-md-6">
@@ -195,7 +201,7 @@
                 </div>
             </div>
         </div>
-    </section>
+    </section> -->
     <!-- Video-Area-End -->
     <!-- Feature-Area -->
     <section class="feature-area section-padding-top" id="features_page">
@@ -365,6 +371,7 @@
                         <div class="item"><img src="images/signin_screen.png" alt=""></div>
                         <div class="item"><img src="images/onboarding3_screen.png" alt=""></div>
                         <div class="item"><img src="images/signup_screen.png" alt=""></div>
+                        <div class="item"><img src="images/onboarding2_screen.png" alt=""></div>
                         <!-- <div class="item"><img src="images/gallery-1.jpg" alt=""></div>
                         <div class="item"><img src="images/gallery-2.jpg" alt=""></div>
                         <div class="item"><img src="images/gallery-3.jpg" alt=""></div>
@@ -515,11 +522,11 @@
         <div class="container">
             <div class="row">
                 <div class="col-xs-12 col-sm-8 col-sm-offset-2">
-                    <div class="subscribe-form text-center">
+                    <div class="subscribe-form text-center" id="sub">
                         <h3 class="blue-color">Subscribe for latest updates</h3>
                         <div class="space-20"></div>
                         <form id="contact" onsubmit="return postToGoogle();">
-                            <input type="email" class="control" placeholder="Enter your email" required="required" name="entry.1959782008" id="mc-email">
+                            <input type="email" class="control" placeholder="Enter your email" required="required" name="entry.1959782008" id="email">
                             <button class="bttn-white active" type="submit"><span class="lnr lnr-location"></span> Subscribe</button>
                             <label class="mt10" for="mc-email"></label>
                         </form>
