@@ -12,7 +12,7 @@
     <title>OnFinance</title>
     <!-- Place favicon.ico in the root directory -->
     <link rel="apple-touch-icon" href="images/apple-touch-icon.png">
-    <link rel="shortcut icon" type="image/ico" href="images/favicon.ico" />
+    <link rel="shortcut icon" type="image/ico" href="images/mainlogo_transparent.png" />
     <!-- Plugin-CSS -->
     <link rel="stylesheet" href="css/bootstrap.min.css">
     <link rel="stylesheet" href="css/owl.carousel.min.css">
@@ -50,8 +50,12 @@
             dataType: "xml",
             success: function (d) {
                 //  $("#contact").fadeIn("slow").removeAttr("style").addClass("success").text("Successful!");
+
+                // var b = document.getElementById("sub");
+                // b.innerHTML = "Form Submitted";
+                // d.preventDefault();
                 
-                $('#contact').trigger('reset');
+                // $('#contact').trigger('reset');
                 // document.addEventListener('DOMContentLoaded', function () {
                 //     const formContainer = document.querySelector('.sub');
                 //     const form = formContainer.querySelector('form');
@@ -60,6 +64,8 @@
                 //         formContainer.innerHTML = 'Thank you for telling me about';
                 //     });
                 // });
+
+                 $("#sub").replaceWith("<div><p>Thank You For Your Subscription</p></div>"); 
                
             },
             error: function (x, y, z) {
@@ -70,7 +76,14 @@
         });
         return false;
     }
+    // document.addEventListener('DOMContentLoaded', function () {
+    //     const formContainer = document.querySelector('sub');
+    //     const form = formContainer.querySelector('contact');
 
+    //     form.addEventListener('submit', function () {
+    //         formContainer.innerHTML = `Thank you for telling me about ${form.someInput.value}`;
+    //     });
+    // });
     
 
    
@@ -422,7 +435,7 @@
             <div class="row">
                 <div class="col-md-8 d-flex align-items-center">
                     <ul class="list-unstyled ui-steps">
-                        <li class="media" style="padding-left:5%; padding-top: 5%">
+                        <li class="media" style="padding-left:5%;">
                             <div class="circle-icon mr-4">1</div>
                             <div class="media-body">
                                 <div class="space-2"></div>
@@ -542,7 +555,7 @@
                     <div class="subscribe-form text-center" id="sub">
                         <h3 class="blue-color">Subscribe for latest updates</h3>
                         <div class="space-20"></div>
-                        <form id="contact" onsubmit="return postToGoogle();">
+                        <form id="contact" onsubmit="return postToGoogle();" action="#">
                             <input type="email" class="control" placeholder="Enter your email" required="required" name="entry.1959782008" id="email">
                             <button class="bttn-white active" type="submit"><span class="lnr lnr-location"></span> Subscribe</button>
                             <label class="mt10" for="mc-email"></label>
