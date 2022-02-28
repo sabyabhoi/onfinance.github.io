@@ -34,6 +34,7 @@
 
 <script>
     function postToGoogle() {
+        console.log('Entered');
         
         var field = $("#email").val();
       
@@ -49,6 +50,14 @@
             type: "POST",
             dataType: "xml",
             success: function (d) {
+                console.log('Succes');
+                preventDefault();
+                if(d.result=="success"){
+                     $('.toast').toast('show');
+                     console.log(d.result); 
+                }
+
+
                 //  $("#contact").fadeIn("slow").removeAttr("style").addClass("success").text("Successful!");
 
                 // var b = document.getElementById("sub");
@@ -139,7 +148,9 @@
                     <div class="space-20"></div>
                     <a href="https://play.google.com/store/apps/details?id=com.onfinance.app" class="bttn-white wow fadeInUp" data-wow-delay="0.8s"><i class="lnr lnr-download"></i>Download App
                     </a>
+                    
                 </div>
+                <div class="space-30"></div>
             </div>
         </div>
     </header>
@@ -616,7 +627,7 @@
                     </div>
                     <div class="col-xs-12 col-sm-3">
                             <div class="footer-box">
-                                <a class="twitter " href="#"><i class="fab fa-twitter-square fa-4x" style="color:#38A1F3;"></i></a>
+                                <a class="twitter " href="https://twitter.com/OnFinance_in"><i class="fab fa-twitter-square fa-4x" style="color:#38A1F3;"></i></a>
                             </div>
                             <div class="space-30 hidden visible-xs"></div>
                         </div>
