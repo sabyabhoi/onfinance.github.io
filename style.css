@@ -251,6 +251,7 @@ input:-webkit-autofill:focus {
 .section-padding {
   padding-top: 120px;
   padding-bottom: 120px;
+  padding-left: 50px;
 }
 
 .upper {
