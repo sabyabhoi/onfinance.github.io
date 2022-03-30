@@ -36,15 +36,26 @@
     function postToGoogle() {
         console.log('Entered');
         
+       
+        
+
+        
         var field = $("#email").val();
+         document.getElementById("FormDiv").innerHTML = "Thank You!",
+
+        console.log(field);
+            var name = field.split("@")[0];
+            console.log(name);
+
       
 
         $.ajax({
-            url: "https://docs.google.com/forms/u/0/d/e/1FAIpQLScvzi1BFmYqKKuHrux71cN6IneV7G3YFdDBaJW1WlEslN6UMA/formResponse",
+            url: "https://docs.google.com/forms/u/7/d/e/1FAIpQLSesPQ0e398CjoPYmhQ30hwTKiDVtTVuhi98LEr7V7hWEW2KEA/formResponse",
 
             //add your google form generated numbers below which are also the 'names' of your inputs     
             data: {
-                "entry.1959782008": field,
+                "entry.334614873": field,
+                "entry.11543414":name,
                
             },
             type: "POST",
@@ -84,6 +95,9 @@
             }
         });
         return false;
+      
+
+        
     }
     // document.addEventListener('DOMContentLoaded', function () {
     //     const formContainer = document.querySelector('sub');
@@ -146,13 +160,37 @@
                         the retail investors, helping them simplify Investments Decision Making.</p>
                     </div>
                     <div class="space-20"></div>
+
+
+<!--                    
                     <a href="https://share.hsforms.com/1uf8muv10QA6nSP-NggVYMwcvxpv" class="bttn-white wow fadeInUp" data-wow-delay="0.8s">Apply For Early Access
-                    </a>
+                    </a> -->
+                <div class="space-20"></div>
+                                <div class="subscribe-form" id="FormDiv">
+                                
+                                    <form id="contact" onsubmit="return postToGoogle();" action="#">
+                                        <input type="email" class="control" placeholder="Enter your email" required="required" name="entry.334614873"
+                                            id="email">
+                                        <button class="bttn-white active" type="submit"><span class="lnr lnr-location"></span> Apply For Early
+                                            Access</button>
+                                        <label class="mt10" for="mc-email"></label>
+                                    </form>
+                                </div>
+
+
+
+                                                  
                     
                 </div>
                 <div class="space-30"></div>
+
+
+
             </div>
+
+
         </div>
+        
     </header>
     <!-- Home-Area-End -->
     <!-- About-Area -->
@@ -186,7 +224,7 @@
     </section>
     <!-- About-Area-End -->
     <!-- Progress-Area -->
-    <section class="progress-area gray-bg" id="progress_page">
+    <!-- <section class="progress-area gray-bg" id="progress_page">
         <div class="container">
             <div class="row">
                 <div class="col-xs-12 col-sm-6 col-md-6">
@@ -208,7 +246,7 @@
                 </div>
             </div>
         </div>
-    </section>
+    </section> -->
     <!-- Progress-Area-End -->
     <!-- Video-Area -->
     <!-- <section class="video-area section-padding">
@@ -373,10 +411,10 @@
                     </div>
                 </div>
             </div>
-            <div class="row">
-                <!-- <div class="col-6">
-                    <div class="team-slide"> -->
-                        <!-- <div class="team-box">
+            <!-- <div class="row">
+                <div class="col-6">
+                    <div class="team-slide"> 
+                         <div class="team-box">
                             <div class="team-image">
                                 <img src="images/team-1.png" alt="">
                             </div>
@@ -384,7 +422,7 @@
                             <h6 class="position">Core Founding Team Member</h6>
                             <p>Forbes 30 under 30</p>
                             <p>BITS Pilani|NYU</p>
-                        </div> -->
+                        </div>
                         <div class="col-6">
 
                             <div class="team-box">
@@ -409,7 +447,37 @@
                                 <p>Cloud Computing|Full Stack</p>
                                 <p>BITS Pilani</p>
                             </div>
+                        </div> -->
+
+
+                        <div class="container-2">
+                           
+                                <div class="team-box">
+                                    <div class="team-image">
+                                        <img src="images/team-2.jpg" alt="">
+                                    </div>
+                                    <h4>Anuj</h4>
+                                    <h6 class="position">CEO & Founder</h6>
+                                    <p>Investment Banking|Quant</p>
+                                    <p>BITS Pilani</p>
+                                </div>
+                            
+                           
+                           
+                                <div class="team-box">
+                                    <div class="team-image">
+                                        <img src="images/team-3.jpg" alt="">
+                                    </div>
+                                    <h4>Priyesh</h4>
+                                    <h6 class="position">CTO & Founder</h6>
+                                    <p>Cloud Computing|Full Stack</p>
+                                    <p>BITS Pilani</p>
+                                </div>
+                            
+                          
+
                         </div>
+
                         
                         
                         <!-- <div class="team-box">
@@ -599,7 +667,7 @@
     </section>
     <!--Questions-Area-End -->
     <!-- Subscribe-Form -->
-    <div class="subscribe-area section-padding">
+    <!-- <div class="subscribe-area section-padding">
         <div class="container">
             <div class="row">
                 <div class="col-xs-12 col-sm-8 col-sm-offset-2">
@@ -615,7 +683,7 @@
                 </div>
             </div>
         </div>
-    </div>
+    </div> -->
     <!-- Subscribe-Form-Area -->
     <!-- Footer-Area -->
     <footer class="footer-area" id="contact_page">

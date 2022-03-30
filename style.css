@@ -660,6 +660,12 @@ input:-webkit-autofill:focus {
   margin-bottom: 30px;
   margin-left: 15px;
   margin-right: 15px;
+  float: left;
+}
+
+.container-2 {
+  display: flex;
+  justify-content: space-evenly;
 }
 
 .team-box:hover {
@@ -856,11 +862,11 @@ input:-webkit-autofill:focus {
     cover;
 }
 
-.subscribe-form {
+/* .subscribe-form {
   background-color: #ffffff;
   padding: 60px;
   border-radius: 5px;
-}
+} */
 
 .subscribe-form form {
   position: relative;
