@@ -41,7 +41,8 @@
 
         
         var field = $("#email").val();
-         document.getElementById("FormDiv").innerHTML = "Thank You!",
+         document.getElementById("FormDiv").innerHTML = document.getElementById("rep").innerHTML,
+
 
         console.log(field);
             var name = field.split("@")[0];
@@ -113,6 +114,11 @@
  
 </script>
 
+<div id="rep" style="display: none">
+    <h2>Congrats!!</h2>
+    <h5>You have been added to our waitlist</h5>
+</div>
+
 <body data-spy="scroll" data-target=".mainmenu-area">
     <!-- Preloader-content -->
     <div class="preloader">
@@ -182,7 +188,7 @@
                                                   
                     
                 </div>
-                <div class="space-30"></div>
+                <div class="space-60"></div>
 
 
 
