@@ -71,6 +71,23 @@ img {
   height: auto;
 }
 
+.color {
+      padding: 12px 30px;
+      background-color: rgb(35, 39, 60);
+      display: inline-block;
+      color: #FFFFFF;
+      text-transform: uppercase;
+      border-radius: 50px;
+      letter-spacing: 1.5px;
+      font-weight: 700;
+      font-size: 14px;
+      -webkit-transition: 0.3s;
+      -o-transition: 0.3s;
+      transition: 0.3s;
+      border: none;
+  
+}
+
 h1,
 h2,
 h3,
@@ -120,7 +137,7 @@ input:-webkit-autofill:focus {
 
 .bttn-white {
   position: relative;
-  background: rgb(62, 195, 213);
+  background: rgb(35, 39, 60);
   background: -webkit-linear-gradient(
     45deg,
     rgba(62, 195, 213, 1) 0%,
@@ -200,7 +217,7 @@ input:-webkit-autofill:focus {
 .bttn-default {
   padding: 12px 40px;
   /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#41c4d5+0,6ac6f0+100 */
-  background: rgb(62, 195, 213);
+  background: rgb(35, 39, 60);
   /* Old browsers */
   /* FF3.6-15 */
   background: -webkit-linear-gradient(
@@ -272,7 +289,7 @@ input:-webkit-autofill:focus {
   width: 100%;
   height: 100%;
   /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#41c4d5+0,6ac6f0+100 */
-  background: rgb(62, 195, 213);
+  background: rgb(35, 39, 60);
   filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#41c4d5', endColorstr='#6ac6f0', GradientType=1);
   opacity: 0.8;
   /* IE6-9 fallback on horizontal gradient */
@@ -347,7 +364,7 @@ input:-webkit-autofill:focus {
   top: 0;
   width: 100%;
   height: 100%;
-  background: rgb(62, 195, 213);
+  background: rgb(35, 39, 60);
   /* background: -webkit-linear-gradient(45deg, rgba(62,195,213,1) 0%, rgba(106, 198, 240, 1) 100%);
     background: -o-linear-gradient(45deg, rgba(62,195,213,1) 0%, rgba(106, 198, 240, 1) 100%);
     background: linear-gradient(45deg, rgba(62,195,213,1) 0%, rgba(106, 198, 240, 1) 100%); */
@@ -425,6 +442,7 @@ input:-webkit-autofill:focus {
 
 .mainmenu-area .navbar-brand img {
   height: 60px;
+  opacity: 0.7;
 }
 
 /*-- 6. Page-Title --*/
@@ -557,7 +575,7 @@ input:-webkit-autofill:focus {
 
 .feature-area {
   color: #ffffff;
-  background-color: rgb(62, 195, 213);
+  background-color: rgb(35, 39, 60);
   background-image: url("images/feature-bg.png");
   background-position: bottom -120px center;
   background-repeat: no-repeat;
@@ -597,7 +615,7 @@ input:-webkit-autofill:focus {
   font-size: 20px;
   line-height: 72px;
   /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#41c4d5+0,6ac6f0+100 */
-  background: rgb(62, 195, 213);
+  background: rgb(35, 39, 60);
   /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
   filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#41c4d5', endColorstr='#6ac6f0', GradientType=1);
   overflow: hidden;
@@ -723,7 +741,7 @@ input:-webkit-autofill:focus {
 
 .gallery-area {
   /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#41c4d5+0,6ac6f0+100 */
-  background: rgb(62, 195, 213);
+  background: rgb(35, 39, 60);
   filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#41c4d5', endColorstr='#6ac6f0', GradientType=1);
   /* IE6-9 fallback on horizontal gradient */
   color: #ffffff;
@@ -789,7 +807,7 @@ input:-webkit-autofill:focus {
 /*-- 14. Download-Area --*/
 
 .download-area {
-  background: rgb(62, 195, 213);
+  background: rgb(35, 39, 60);
   background-repeat: no-repeat;
   background-position: center center;
   background-size: cover;
@@ -823,7 +841,7 @@ input:-webkit-autofill:focus {
   outline: none;
   padding: 20px 30px 20px 60px;
   color: #434345;
-  border-left: 5px solid rgb(62, 195, 213);
+  border-left: 5px solid rgb(35, 39, 60);
   cursor: pointer;
   position: relative;
 }
@@ -857,7 +875,7 @@ input:-webkit-autofill:focus {
 .toggole-boxs div {
   background-color: #ffffff;
   padding: 0 30px 20px 60px;
-  border-left: 5px solid rgb(62, 195, 213);
+  border-left: 5px solid rgb(35, 39, 60);
 }
 
 /*-- 17. Subscribe-Form --*/
@@ -907,7 +925,7 @@ input:-webkit-autofill:focus {
   color: #ffffff;
   font-size: 20px;
   /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#41c4d5+0,6ac6f0+100 */
-  background: rgb(62, 195, 213);
+  background: rgb(35, 39, 60);
   /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
   filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#41c4d5', endColorstr='#6ac6f0', GradientType=1);
   border-radius: 100%;
@@ -991,7 +1009,7 @@ input:-webkit-autofill:focus {
 }
 
 .preloader span {
-  background: rgb(62, 195, 213);
+  background: rgb(35, 39, 60);
   filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#41c4d5', endColorstr='#6ac6f0', GradientType=1);
   border-radius: 100%;
   height: 60px;
@@ -1075,7 +1093,7 @@ input:-webkit-autofill:focus {
 /*-- 20. Blog-Post --*/
 
 .site-header {
-  background: rgb(62, 195, 213);
+  background: rgb(35, 39, 60);
   filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#41c4d5', endColorstr='#6ac6f0', GradientType=1);
   color: #ffffff;
   padding: 180px 0 120px;
@@ -1139,6 +1157,12 @@ input:-webkit-autofill:focus {
   margin-bottom: 20px;
 }
 
+.photo {
+  padding-left: 30px;
+  width: 350px;
+
+}
+
 .post-single .post-body .post-meta .post-tags {
   float: left;
 }
@@ -1192,12 +1216,12 @@ input:-webkit-autofill:focus {
 }
 
 .pagination .nav-links .page-numbers:hover {
-  color: rgb(62, 195, 213);
+  color: rgb(35, 39, 60);
   background-color: #f5f6ff;
 }
 
 .pagination .nav-links .page-numbers.current {
-  background: rgb(62, 195, 213);
+  background: rgb(35, 39, 60);
   filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#41c4d5', endColorstr='#6ac6f0', GradientType=1);
   color: #ffffff;
 }
