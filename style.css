@@ -663,6 +663,11 @@ input:-webkit-autofill:focus {
   float: left;
 }
 
+.container-3 {
+  display: flex;
+  justify-content: left;
+}
+
 .container-2 {
   display: flex;
   justify-content: space-evenly;
