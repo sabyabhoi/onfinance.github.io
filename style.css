@@ -133,6 +133,8 @@ input:-webkit-autofill:focus {
   -webkit-box-shadow: 0 0 0px 1000px white inset !important;
 }
 
+
+
 /*-- 3. Button-Style --*/
 
 .bttn-white {
@@ -684,6 +686,11 @@ input:-webkit-autofill:focus {
 .container-3 {
   display: flex;
   justify-content: left;
+    padding-top: 10px;
+    padding-right: 5px;
+    padding-bottom: 10px;
+    padding-left: 5px;
+  background-color:rgb(35, 39, 60) ;
 }
 
 .container-2 {
