@@ -132,35 +132,26 @@
 </div>
 
 
-<div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+<div class="modal modalFade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
     aria-hidden="true">
-    <div class="modal-dialog modal-dialog-centered modal-sm modal-notify modal-danger" role="document">
-        <div class="modal-content text-cente" style="background-color:rgb(35, 39, 60);"> 
-            <!-- <div class="modal-header d-flex justify-content-center" >
-                <h2 class="modal-title" id="exampleModalLabel">Congrats!!!</h2> -->
-                <!-- <button type="button" class="close" data-dismiss="modal" aria-label="Close" >
-                    <span aria-hidden="true">&times;</span>
-                </button>
-            </div> -->
-            <!-- <div class="modal-body">
-                You have been added to our waitlist
-            </div> -->
+    <div class="modalAlligner modal-dialog modal-dialog-centered modal-sm modal-notify modal-danger" role="document">
+        <div class=" sizer modal-content text-center" style="background-color:rgb(35, 39, 60);"> 
                 <div class="container-3">
                     <div class="">
                         <h2 style="color:white;">Congrats!!</h2>
                         <h4 style="color:white;">You have been added to our waitlist</h4>
                     </div>
                     <div class="">
-                        <img src="images/Vector (1).png"></img>
+                        <!-- <img src="images/Vector (1).png"></img> -->
                     </div>
                 </div>
-            <div class="modal-footer" style="background-color:rgb(35, 39, 60);">
-                <button type="button" class="btn btn-secondary" data-dismiss="modal">Ok</button>
-                <!-- <button type="button" class="btn btn-primary">Save changes</button> -->
-            </div>
         </div>
     </div>
 </div>
+<!-- tsParticles container -->
+<div id="tsparticles" class="particless"></div>
+<script src="https://cdn.jsdelivr.net/npm/tsparticles@1.25.0"></script>
+<script src="https://cdn.jsdelivr.net/npm/tsparticles-shape-confetti@1.10.0"></script>
 
 
 <!--Modal: modalConfirmDelete-->
@@ -308,7 +299,7 @@
                                             id="email">
                                             <div class="space-30"></div>
                                             
-                                        <button class="color" type="submit" data-toggle="modal" data-target="#exampleModal"><span class="lnr lnr-location"></span> Apply For Early
+                                        <button class="color emailButton" type="submit" data-toggle="modal" data-target="#exampleModal"><span class="lnr lnr-location"></span> Apply For Early
                                             Access</button>
                                         <label class="mt10" for="mc-email"></label>
                                     </form>
@@ -913,6 +904,109 @@
             </div>
         </div> 
         <!-- Footer-Bootom-End -->
+        <script>
+    const emailbutton = document.querySelector('.emailButton');
+    const particless = document.querySelector('.particless');
+    const modalclose = document.querySelector('.modalFade');
+    const confetti = ()=>{
+        tsParticles.load("tsparticles", {
+            fpsLimit: 60,
+            particles: {
+                number: {
+                    value: 0
+                },
+                color: {
+                    value: ["#00FFFC", "#FC00FF", "#fffc00"]
+                },
+                shape: {
+                    type: "confetti",
+                    options: {
+                        confetti: {
+                            type: ["circle", "square"]
+                        }
+                    }
+                },
+                opacity: {
+                    value: 1,
+                    animation: {
+                        enable: true,
+                        minimumValue: 0,
+                        speed: 2,
+                        startValue: "max",
+                        destroy: "min"
+                    }
+                },
+                size: {
+                    value: 20,
+                    random: {
+                        enable: true,
+                        minimumValue: 7
+                    }
+                },
+                links: {
+                    enable: false
+                },
+                life: {
+                    duration: {
+                        sync: true,
+                        value: 5
+                    },
+                    count: 1
+                },
+                move: {
+                    enable: true,
+                    gravity: {
+                        enable: true,
+                        acceleration: 20
+                    },
+                    speed: 30,
+                    decay: 0.1,
+                    direction: "none",
+                    random: false,
+                    straight: false,
+                    outModes: {
+                        default: "destroy",
+                        top: "none"
+                    }
+                }
+            },
+            interactivity: {
+                detectsOn: "window",
+                events: {
+                    resize: true
+                }
+            },
+            detectRetina: true,
+            background: {
+                // color: "#232323"
+            },
+            emitters: {
+                direction: "none",
+                life: {
+                    count: 0,
+                    duration: 0.1,
+                    delay: 0.4
+                },
+                rate: {
+                    delay: 0.1,
+                    quantity: 100
+                },
+                size: {
+                    width: 0,
+                    height: 0
+                }
+            }
+        });
+    }
+    emailbutton.addEventListener('click',(e)=>{
+        e.preventDefault();
+        particless.style.display = 'block';
+        confetti();
+    })
+    modalclose.addEventListener('click',(e)=>{
+        particless.style.display = 'none';
+    })
+</script>
 </footer>
     <!--Vendor-JS-->
     <script src="js/vendor/jquery-1.12.4.min.js"></script>

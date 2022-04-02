@@ -689,6 +689,83 @@ input:-webkit-autofill:focus {
   margin-right: 15px;
   float: left;
 }
+.modalAlligner {
+  position: absolute;
+  top: 30vh;
+  left: 40vw;
+  
+}
+
+/* ------------------ */
+
+#tsparticles {
+  position: absolute;
+  width: 100vw;
+  height: 100vh;
+  z-index: 20;
+}
+.particless{
+  display: none;
+}
+
+/* ----------------- */
+
+.sizer{
+  width: 20vw;
+  height: 40vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+@media screen and (max-width: 1350px) {
+  .modalAlligner {
+    left: 35vw;
+  }
+  
+  .sizer {
+    width: 30vw;
+  }
+}
+@media screen and (max-width: 1070px) {
+  .modalAlligner {
+    left: 30vw;
+  }
+
+  .sizer {
+    width: 40vw;
+  }
+}
+@media screen and (max-width: 690px) {
+  .modalAlligner {
+    left: 25vw;
+  }
+
+  .sizer {
+    width: 50vw;
+  }
+}
+
+@media screen and (max-width: 505px) {
+  .modalAlligner {
+    left: 20vw;
+  }
+
+  .sizer {
+    width: 60vw;
+  }
+}
+
+.modalFade{
+  width: 100vw;
+  height: 100vh;
+  position: absolute;
+  left: 0;
+  right: 0;
+  background: rgba(0, 0, 0, 0.4);
+  /* filter: blur(0.1); */
+}
+
 
 .container-3 {
   display: flex;
