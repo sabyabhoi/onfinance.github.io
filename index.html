@@ -62,6 +62,7 @@
             },
             type: "POST",
             dataType: "xml",
+            action: anim(),
             success: function (d) {
                 console.log('Succes');
                 preventDefault();
@@ -299,11 +300,12 @@
                                             id="email">
                                             <div class="space-30"></div>
                                             
-                                        <button class="color emailButton" type="submit" data-toggle="modal" data-target="#exampleModal"><span class="lnr lnr-location"></span> Apply For Early
+                                        <button class="color emailButton" type="submit"><span class="lnr lnr-location"></span> Apply For Early
                                             Access</button>
                                         <label class="mt10" for="mc-email"></label>
                                     </form>
                                 </div>
+                                <!-- data-toggle="modal" data-target="#exampleModal" -->
 
 
 
@@ -998,14 +1000,20 @@
             }
         });
     }
-    emailbutton.addEventListener('click',(e)=>{
-        e.preventDefault();
-        particless.style.display = 'block';
-        confetti();
-    })
+    // emailbutton.addEventListener('click',(e)=>{
+    //     e.preventDefault();
+    //     particless.style.display = 'block';
+    //     confetti();
+    // })
     modalclose.addEventListener('click',(e)=>{
         particless.style.display = 'none';
     })
+
+    function anim(){
+        particless.style.display = 'block';
+        $('#exampleModal').modal('show')
+        confetti();
+        }
 </script>
 </footer>
     <!--Vendor-JS-->
