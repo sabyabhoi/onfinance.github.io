@@ -608,8 +608,15 @@ input:-webkit-autofill:focus {
   position: relative;
   padding-left: 100px;
 }
+.service-box-2 {
+  position: absolute;
+  padding-left: 100px;
+}
 .box {
   padding: 0 0 0 100px;
+}
+.box-2 {
+  padding: 0 0 0 80px;
 }
 
 .team-slide .owl-controls .owl-nav > div,
@@ -618,7 +625,7 @@ input:-webkit-autofill:focus {
   left: 0;
   top: 0;
   width: 70px;
-  height: 70px;
+  height:70px;
   border-radius: 100%;
   text-align: center;
   font-size: 20px;
@@ -637,6 +644,30 @@ input:-webkit-autofill:focus {
   box-shadow: 0 0 30px 0 rgba(0, 0, 0, 0.2);
 }
 
+.team-slide .owl-controls .owl-nav>div,
+.service-box-2 .box-icon {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 50px;
+  height: 50px;
+  border-radius: 100%;
+  text-align: center;
+  font-size: 20px;
+  line-height: 72px;
+  /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#41c4d5+0,6ac6f0+100 */
+  background: rgb(35, 39, 60);
+  /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#41c4d5', endColorstr='#6ac6f0', GradientType=1);
+  overflow: hidden;
+  z-index: 1;
+  color: #5e88fc;
+  -webkit-transition: 0.3s;
+  -o-transition: 0.3s;
+  transition: 0.3s;
+  -webkit-box-shadow: 0 0 30px 0 rgba(0, 0, 0, 0.2);
+  box-shadow: 0 0 30px 0 rgba(0, 0, 0, 0.2);
+}
 .team-slide .owl-controls .owl-nav > div:hover,
 .service-box:hover .box-icon {
   color: #ffffff;
@@ -665,6 +696,10 @@ input:-webkit-autofill:focus {
 
 .service-box h4 {
   margin-bottom: 10px;
+}
+
+.a-color{
+  color: #ffffff;
 }
 
 /*-- 12. Testimonial-Area --*/
@@ -770,10 +805,10 @@ input:-webkit-autofill:focus {
 .container-3 {
   display: flex;
   justify-content: left;
-    padding-top: 10px;
-    padding-right: 5px;
-    padding-bottom: 10px;
-    padding-left: 5px;
+    padding-top: 15px;
+    padding-right: 10px;
+    padding-bottom: 15px;
+    padding-left: 10px;
   background-color:rgb(35, 39, 60) ;
 }
 
