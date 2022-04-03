@@ -35,11 +35,9 @@
 <script>
     function postToGoogle() {
         console.log('Entered');
-        
-       
-        
-
-        
+        var win = window.location.href;
+        var win_1 = win.split(".")[1];
+        var refree = win_1.split("/")[1]
         var field = $("#email").val();
         //  document.getElementById("FormDiv").innerHTML = document.getElementById("rep").innerHTML,
         
@@ -58,6 +56,7 @@
             data: {
                 "entry.334614873": field,
                 "entry.11543414":name,
+                "entry.1166486301": refree
                
             },
             type: "POST",
@@ -580,23 +579,23 @@
                     </div>
                 </div>
             </div>
-            <!-- <div class="row">
+            <div class="xs-row hidden-sm hidden-md hidden-lg hidden-xl">
                 <div class="col-6">
                     <div class="team-slide"> 
                          <div class="team-box">
                             <div class="team-image">
-                                <img src="images/team-1.png" alt="">
+                                <img src="images/priyesh.jpeg" alt="">
                             </div>
-                            <h4>Dr. Anshul</h4>
-                            <h6 class="position">Core Founding Team Member</h6>
-                            <p>Forbes 30 under 30</p>
-                            <p>BITS Pilani|NYU</p>
-                        </div>
+                            <h4>Priyesh</h4>
+                            <h6 class="position">CTO & Founder</h6>
+                            <p>Cloud Computing|Full Stack</p>
+                            <p>BITS Pilani</p>
+                        </div> 
                         <div class="col-6">
 
                             <div class="team-box">
                                 <div class="team-image">
-                                    <img src="images/team-2.jpg" alt="">
+                                    <img src="images/anuj.jpeg" alt="">
                                 </div>
                                 <h4>Anuj</h4>
                                 <h6 class="position">CEO & Founder</h6>
@@ -609,43 +608,17 @@
 
                             <div class="team-box">
                                 <div class="team-image">
-                                    <img src="images/team-3.jpg" alt="">
+                                    <img src="images/priyesh.jpeg" alt="">
                                 </div>
                                 <h4>Priyesh</h4>
                                 <h6 class="position">CTO & Founder</h6>
                                 <p>Cloud Computing|Full Stack</p>
                                 <p>BITS Pilani</p>
                             </div>
-                        </div> -->
-
-
-                        <div class="container-2">
-                           
-                                <div class="team-box">
-                                    <div class="team-image">
-                                        <img src="images/anuj.jpeg" alt="">
-                                    </div>
-                                    <h4>Anuj</h4>
-                                    <h6 class="position">CEO & Founder</h6>
-                                    <p>Investment Banking|Quant</p>
-                                    <p>BITS Pilani</p>
-                                </div>
-                            
-                           
-                           
-                                <div class="team-box">
-                                    <div class="team-image">
-                                        <img src="images/priyesh.jpeg" alt="">
-                                    </div>
-                                    <h4>Priyesh</h4>
-                                    <h6 class="position">CTO & Founder</h6>
-                                    <p>Cloud Computing|Full Stack</p>
-                                    <p>BITS Pilani</p>
-                                </div>
-                            
-                          
-
                         </div>
+
+
+                       
 
                         
                         
@@ -675,6 +648,36 @@
                         </div> -->
                     </div>
                 <!-- </div> -->
+            </div>
+        </div>
+
+        <div class="hidden-xs  sm-row md-row lg-row xl-row">
+            <div class="container-2">
+            
+                <div class="team-box">
+                    <div class="team-image">
+                        <img src="images/anuj.jpeg" alt="">
+                    </div>
+                    <h4>Anuj</h4>
+                    <h6 class="position">CEO & Founder</h6>
+                    <p>Investment Banking|Quant</p>
+                    <p>BITS Pilani</p>
+                </div>
+            
+            
+            
+                <div class="team-box">
+                    <div class="team-image">
+                        <img src="images/priyesh.jpeg" alt="">
+                    </div>
+                    <h4>Priyesh</h4>
+                    <h6 class="position">CTO & Founder</h6>
+                    <p>Cloud Computing|Full Stack</p>
+                    <p>BITS Pilani</p>
+                </div>
+            
+            
+            
             </div>
         </div>
     </section>

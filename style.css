@@ -724,6 +724,21 @@ input:-webkit-autofill:focus {
   margin-right: 15px;
   float: left;
 }
+.team-box-2 {
+  position: relative;
+  padding: 55px 30px 30px 30px;
+  -webkit-box-shadow: 0 0 30px -5px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 0 30px -5px rgba(0, 0, 0, 0.1);
+  border-radius: 5px;
+  margin-top: 40px;
+  -webkit-transition: 0.3s;
+  -o-transition: 0.3s;
+  transition: 0.3s;
+  margin-bottom: 30px;
+  margin-left: 15px;
+  margin-right: 15px;
+  float: center;
+}
 .modalAlligner {
   position: absolute;
   top: 30vh;
