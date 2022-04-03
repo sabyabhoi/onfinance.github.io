@@ -616,7 +616,7 @@ input:-webkit-autofill:focus {
   padding: 0 0 0 100px;
 }
 .box-2 {
-  padding: 0 0 0 80px;
+  padding: 0 0 0 60px;
 }
 
 .team-slide .owl-controls .owl-nav > div,
@@ -851,13 +851,39 @@ input:-webkit-autofill:focus {
   box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.1);
 }
 
+.team-box-2 .team-image {
+  position: absolute;
+  top: -40px;
+  width: 80px;
+  height: 80px;
+  border-radius: 100%;
+  background-color: #ffffff;
+  text-align: center;
+  overflow: hidden;
+  border: 5px solid #ffffff;
+  -webkit-box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.1);
+  box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.1);
+}
+
 .team-box h4 {
   color: #5e88fc;
   font-weight: 600;
   font-size: 20px;
 }
 
+.team-box-2 h4 {
+  color: #5e88fc;
+  font-weight: 600;
+  font-size: 20px;
+}
+
 .team-box h6.position {
+  font-size: 14px;
+  font-style: italic;
+  font-weight: 400;
+}
+
+.team-box-2 h6.position {
   font-size: 14px;
   font-style: italic;
   font-weight: 400;
