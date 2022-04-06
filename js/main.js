@@ -118,7 +118,7 @@
        ----------------------*/
     var magnifPopup = function () {
         $('.popup').magnificPopup({
-            type: 'iframe',
+            type: 'image',
             removalDelay: 300,
             mainClass: 'mfp-with-zoom',
             gallery: {
