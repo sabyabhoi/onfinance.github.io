@@ -522,7 +522,7 @@ input:-webkit-autofill:focus {
 
 .home-area {
   width: 100%;
-  background: url("images/header-bg.png") no-repeat scroll center bottom / cover;
+  background: url("https: //res.cloudinary.com/rohitkk432/image/upload/v1649242527/header-bg_bgyxyj.png") no-repeat scroll center bottom / cover;
   padding-top: 26vh;
   color: #ffffff;
   margin-bottom: 100px;
@@ -537,7 +537,7 @@ input:-webkit-autofill:focus {
 /*-- 8. Progress-Area --*/
 
 .progress-area {
-  background-image: url("images/progress-bg.jpg");
+  background-image: url("https: //res.cloudinary.com/rohitkk432/image/upload/v1649242538/progress-bg_sjntsv.jpg");
   background-repeat: no-repeat;
   background-position: right center;
   background-size: auto 100%;
@@ -553,7 +553,7 @@ input:-webkit-autofill:focus {
 /*-- 9. Video-Area --*/
 
 .video-area {
-  background-image: url("images/video-bg.jpg");
+  background-image: url("https: //res.cloudinary.com/rohitkk432/image/upload/v1649242539/video-bg_wkimbj.jpg");
   background-repeat: no-repeat;
   background-position: left center;
   background-size: auto 100%;
@@ -585,7 +585,7 @@ input:-webkit-autofill:focus {
 .feature-area {
   color: #ffffff;
   background-color: rgb(35, 39, 60);
-  background-image: url("images/feature-bg.png");
+  background-image: url("https: //res.cloudinary.com/rohitkk432/image/upload/v1649242525/feature-bg_cjib5a.png");
   background-position: bottom -120px center;
   background-repeat: no-repeat;
   background-size: auto 94%;
@@ -1056,7 +1056,7 @@ input:-webkit-autofill:focus {
 /*-- 17. Subscribe-Form --*/
 
 .subscribe-area {
-  background: url("images/subscribe-bg.jpg") no-repeat scroll center center /
+  background: url("https: //res.cloudinary.com/rohitkk432/image/upload/v1649242538/subscribe-bg_tz7t8f.jpg") no-repeat scroll center center /
     cover;
 }
 
