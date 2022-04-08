@@ -136,7 +136,7 @@
                 opener: function (openerElement) {
                     // openerElement is the element on which popup was initialized, in this case its <a> tag
                     // you don't need to add "opener" option if this code matches your needs, it's defailt one.
-                    return openerElement.is('img') ? openerElement : openerElement.find('img');
+                    return openerElement.is('.preloadimg') ? openerElement : openerElement.find('.preloadimg');
                 }
             }
         });
