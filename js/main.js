@@ -145,7 +145,7 @@
     magnifPopup();
     /* Preloader Js
     ===================*/
-    $('.preloadimg').on("load", function () {
+    $(window).on("load", function () {
         $('.preloader').fadeOut(500);
         /*WoW js Active
         =================*/
