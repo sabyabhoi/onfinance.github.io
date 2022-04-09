@@ -146,6 +146,7 @@
     /* Preloader Js
     ===================*/
     $(".preloadimg").ready(function () {
+        setTimeout("", 2000);
         $('.preloader').fadeOut(500);
         /*WoW js Active
         =================*/
