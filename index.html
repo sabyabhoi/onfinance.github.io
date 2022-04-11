@@ -39,6 +39,7 @@
         var win = window.location.href;
         var win_1 = win.split(".")[1];
         var refree = win_1.split("?")[1]
+        var referral = refree.split("=")[1]
         var field = $("#email").val();
         //  document.getElementById("FormDiv").innerHTML = document.getElementById("rep").innerHTML,
         
@@ -57,7 +58,7 @@
             data: {
                 "entry.334614873": field,
                 "entry.11543414":name,
-                "entry.1166486301": refree
+                "entry.1166486301": referral
                
             },
             type: "POST",
