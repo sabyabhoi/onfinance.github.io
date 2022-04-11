@@ -64,7 +64,7 @@
             action: anim(),
             success: function (d) {
                 console.log('Succes');
-                preventDefault();
+                d.preventDefault();
                 if(d.result=="success"){
                      $('.toast').toast('show');
                      console.log(d.result); 
