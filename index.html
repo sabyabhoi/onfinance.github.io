@@ -38,7 +38,7 @@
         console.log('Entered');
         var win = window.location.href;
         var win_1 = win.split(".")[1];
-        var refree = win_1.split("/")[1]
+        var refree = win_1.split("?")[1]
         var field = $("#email").val();
         //  document.getElementById("FormDiv").innerHTML = document.getElementById("rep").innerHTML,
         
@@ -93,14 +93,11 @@
             },
             error: function (x, y, z) {
                
-
-                $('#contact').trigger('reset');
+                $('.emailidval').val("");
             }
         });
         return false;
       
-
-        
     }
     // document.addEventListener('DOMContentLoaded', function () {
     //     const formContainer = document.querySelector('sub');
@@ -303,7 +300,7 @@
                                 <div class="subscribe-form" id="FormDiv">
                                 
                                     <form id="contact" onsubmit="postToGoogle();" action="#">
-                                        <input type="email" class="control" placeholder="Enter your email" required="required" name="entry.334614873"
+                                        <input type="email" class="control emailidval" placeholder="Enter your email" required="required" name="entry.334614873"
                                             id="email">
                                             <div class="space-30"></div>
                                             
