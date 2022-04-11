@@ -33,7 +33,8 @@
 </head>
 
 <script>
-    function postToGoogle() {
+    function postToGoogle(e) {
+        e.preventDefault();
         console.log('Entered');
         var win = window.location.href;
         var win_1 = win.split(".")[1];
@@ -301,7 +302,7 @@
                 <div class="space-20"></div>
                                 <div class="subscribe-form" id="FormDiv">
                                 
-                                    <form id="contact" onsubmit="postToGoogle();" action="#">
+                                    <form id="contact" onsubmit="postToGoogle(e);" action="#">
                                         <input type="email" class="control" placeholder="Enter your email" required="required" name="entry.334614873"
                                             id="email">
                                             <div class="space-30"></div>
