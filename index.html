@@ -41,75 +41,43 @@
         var refree = win_1?.split("?")[1]
         var referral = refree?.split("=")[1]
         var field = $("#email").val();
-        //  document.getElementById("FormDiv").innerHTML = document.getElementById("rep").innerHTML,
-        // var referral = "Quark2022"
 
 
         console.log(field);
             var name = field.split("@")[0];
             console.log(name);
 
-        // let data ={
-        //     "entry.334614873": field,
-        //     "entry.11543414":name,
-        //     "entry.1166486301": referral
-        // }
+        if(field.includes("@")&&field.includes(".")){
+            $.ajax({
+                url: "https://docs.google.com/forms/u/7/d/e/1FAIpQLSesPQ0e398CjoPYmhQ30hwTKiDVtTVuhi98LEr7V7hWEW2KEA/formResponse",
 
-        // fetch("https://docs.google.com/forms/u/7/d/e/1FAIpQLSesPQ0e398CjoPYmhQ30hwTKiDVtTVuhi98LEr7V7hWEW2KEA/formResponse", {
-        //     method: "POST",
-        //     headers: {'Content-Type': 'application/json'}, 
-        //     body: JSON.stringify(data)
-        // }).then(res => {
-        //     console.log("Request complete! response:", res);
-        //     anim()
-        // })
-
-        $.ajax({
-            url: "https://docs.google.com/forms/u/7/d/e/1FAIpQLSesPQ0e398CjoPYmhQ30hwTKiDVtTVuhi98LEr7V7hWEW2KEA/formResponse",
-
-            //add your google form generated numbers below which are also the 'names' of your inputs     
-            data: {
-                "entry.334614873": field,
-                "entry.11543414":name,
-                "entry.1166486301": referral
-               
-            },
-            type: "POST",
-            dataType: "xml",
-            action: anim(),
-            success: function (d) {
-                console.log('Succes');
-                d.preventDefault();
-                if(d.result=="success"){
-                     $('.toast').toast('show');
-                     console.log(d.result); 
-                }
-
-
-                //  $("#contact").fadeIn("slow").removeAttr("style").addClass("success").text("Successful!");
-
-                // var b = document.getElementById("sub");
-                // b.innerHTML = "Form Submitted";
-                // d.preventDefault();
+                //add your google form generated numbers below which are also the 'names' of your inputs     
+                data: {
+                    "entry.334614873": field,
+                    "entry.11543414":name,
+                    "entry.1166486301": referral
+                },
+                type: "POST",
+                dataType: "xml",
+                action: anim(),
+                success: function (d) {
+                    console.log('Succes');
+                    d.preventDefault();
+                    if(d.result=="success"){
+                        $('.toast').toast('show');
+                        console.log(d.result); 
+                    }
+                    $("#sub").replaceWith("<div><p>Thank You For Your Subscription</p></div>"); 
+                    
+                },
+                error: function (x, y, z) {
                 
-                // $('#contact').trigger('reset');
-                // document.addEventListener('DOMContentLoaded', function () {
-                //     const formContainer = document.querySelector('.sub');
-                //     const form = formContainer.querySelector('form');
+                    $('.emailidval').val("");
+                }
+            });
+        }
 
-                //     form.addEventListener('submit', function () {
-                //         formContainer.innerHTML = 'Thank you for telling me about';
-                //     });
-                // });
-
-                 $("#sub").replaceWith("<div><p>Thank You For Your Subscription</p></div>"); 
-               
-            },
-            error: function (x, y, z) {
-               
-                $('.emailidval').val("");
-            }
-        });
+        
         return false;
       
     }
