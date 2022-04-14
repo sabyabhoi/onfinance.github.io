@@ -60,19 +60,19 @@
                 dataType: "xml",
                 action: anim(),
                 success: function (d) {
-                    console.log('Succes');
+                    console.log('Success');
                     d.preventDefault();
                     if(d.result=="success"){
                         $('.toast').toast('show');
                         console.log(d.result); 
                     }
                     $("#sub").replaceWith("<div><p>Thank You For Your Subscription</p></div>"); 
-                    $('.emailidval').attr('placeholder','Enter your email');
                 },
                 error: function (x, y, z) {
                     $('.emailidval').val("");
                 }
             });
+            $('.emailidval').attr('placeholder','Enter your email');
         }
         else{
             $('.emailidval').attr('placeholder','Enter a valid Email Address');
