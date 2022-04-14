@@ -911,7 +911,7 @@
         <div class="footer-bottom">
             <div class="container">
                 <div class="row">
-                    <div class="col-xs-12 col-md-5 text-center apichecker">
+                    <div class="col-xs-12 col-md-5 text-center">
             <span>Copyright &copy;<script>document.write(new Date().getFullYear());</script> All rights reserved | OnFinance
                     </div>
                 </div>
@@ -1025,30 +1025,6 @@
         $('#exampleModal').modal('show')
         confetti();
         }
-
-    const apichecker = document.querySelector('.apichecker');
-    apichecker.addEventListener('click',(e)=>{
-        e.preventDefault();
-        var myHeaders = new Headers();
-        myHeaders.append("Content-Type", "application/json");
-
-        var raw = JSON.stringify({
-            "email": "rohitkodam4@gmail.com",
-            "password": "rk432"
-        });
-
-        var requestOptions = {
-            method: 'POST',
-            headers: myHeaders,
-            body: raw,
-            redirect: 'follow'
-        };
-
-        fetch("https://api.onfinance.in/login", requestOptions)
-            .then(response => response.text())
-            .then(result => console.log(result))
-            .catch(error => console.log('error', error));
-    })  
 </script>
 </footer>
     <!--Vendor-JS-->
