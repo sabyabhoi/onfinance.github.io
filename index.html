@@ -42,7 +42,6 @@
         var referral = refree?.split("=")[1]
         var field = $("#email").val();
 
-
         console.log(field);
             var name = field.split("@")[0];
             console.log(name);
@@ -68,18 +67,20 @@
                         console.log(d.result); 
                     }
                     $("#sub").replaceWith("<div><p>Thank You For Your Subscription</p></div>"); 
-                    
+                    $('.emailidval').attr('placeholder','Enter your email');
                 },
                 error: function (x, y, z) {
-                
                     $('.emailidval').val("");
                 }
             });
         }
+        else{
+            $('.emailidval').attr('placeholder','Enter a valid Email Address');
+        }
+
         $('.emailidval').val("");
         
         return false;
-      
     }
     // document.addEventListener('DOMContentLoaded', function () {
     //     const formContainer = document.querySelector('sub');
