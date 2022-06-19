@@ -12,6 +12,9 @@ body{
     flex-direction: column;
     align-items: center;
     justify-content: flex-start;
+    width: 100vw;
+    min-height: 300vh;
+    overflow-x: hidden;
 }
 .nav{
     width: 100vw;
@@ -48,8 +51,8 @@ body{
     margin: 0 1rem;
 }
 .navlink{
-    font-size: 1.4rem;
-    font-weight: 600;
+    font-size: 1.2rem;
+    font-weight: 500;
     color: rgb(255,255,255);
     text-decoration: none;
     margin: 0 1rem;
@@ -149,7 +152,6 @@ body{
     /* right: 6rem; */
     top: 10%;
     right: 14%;
-    transform: rotate(10deg);
 }
 
 .ci2 {
@@ -157,15 +159,98 @@ body{
     /* bottom: 2rem; */
     /* left: 6rem; */
     bottom: 10%;
-    /* left: 18%; */
     left: 14%;
-    transform: rotate(-10deg);
 }
 /* home end  */
 
 
 /* features */
 
+.features{
+    width: 100vw;
+    max-width: 80rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-start;
+    padding: 4rem;
+    padding-top: 9rem;
+}
+.featscreen{
+    width:40%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.phonescreenft{
+    position: relative;
+    width: 20rem;
+    height: 33.3rem;
+    border-radius: 1rem;
+    overflow: hidden;
+}
+.ftframe{
+    position: absolute;
+    top: 0rem;
+    left: 0rem;
+    width:20rem;
+    z-index: 4;
+}
+.featimager{
+    position: absolute;
+    top: 0.5rem;
+    left: 2.7rem;
+    width: 14.6rem;
+    height: 32rem;
+    overflow: hidden;
+    z-index: 2;
+}
+.ftimg{
+    width: 14.6rem;
+}
+.featcontainer{
+    width: 60%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+.featpoint{
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: white;
+    /* background-color: #242146; */
+    /* background: radial-gradient(ellipse at center top,#784bff 0%,#77D9EF 100%); */
+    background: radial-gradient(ellipse at center top, #784bff 0%, #784bff00 130%);
+    /* background: radial-gradient(ellipse at center top, #77d9ef 0%, #77d9ef00 100%); */
+    width: 16rem;
+    height: 8rem;
+    padding: 1rem;
+    margin: 1.5rem;
+    border-radius: 7px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 6px 6px 10px #000000;
+    position: relative;
+
+    /* vanilla tilt  */
+    transform-style: preserve-3d;
+    transform: perspective(1000px);
+}
+.ftimage{
+    top:-3rem;
+    left: auto;
+    right: auto;
+    position: absolute;
+    width:6rem;
+
+    /* vanilla tilt  */
+    transform: translateZ(10px);
+}
 /* features end  */
 
 
