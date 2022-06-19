@@ -13,3 +13,10 @@ window.addEventListener('scroll', () => {
         featurescreen.style.transform = `translate(0,-${(value-600)/3}px)`;
     }
 });
+
+const hamburger = document.querySelector('.hamburger');
+const navmodal = document.querySelector('.navoptions');
+
+hamburger.addEventListener('click', () => {
+    navmodal.classList.toggle('navmodal-active');
+});
