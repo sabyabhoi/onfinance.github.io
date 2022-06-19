@@ -35,7 +35,7 @@ a{
     font-size: 2rem;
     display: none;
     color: white;
-    z-index: 4;
+    z-index: 7;
 }
 .OnfinanceHeader {
     display: flex;
@@ -90,6 +90,7 @@ a{
         height: 100vh;
         padding-top: 6rem;
         box-shadow: -4px 0px 5px rgba(0,0,0);
+        z-index: 7;
     }
     .navmodal-active{
         display:flex
