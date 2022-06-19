@@ -228,6 +228,31 @@ a{
         padding-left: 1rem;
     }
 }
+@media screen and (max-width: 500px) {
+    .tline {
+        font-size: 2rem;
+    }
+
+    .tlineg {
+        font-size: 2.3rem;
+    }
+
+    .sline {
+        font-size: 0.8rem;
+    }
+    .downloadbtn {
+        margin-right: 1rem;
+        width: 10rem;
+    }
+}
+@media screen and (max-width: 410px) {
+    .landing {
+        padding-left: 2rem;
+    }
+    .downloadbtn {
+        width: 9rem;
+    }
+}
 /* home end  */
 
 
