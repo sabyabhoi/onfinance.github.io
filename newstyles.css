@@ -266,5 +266,46 @@ a{
 
 
 /* about us */
+.about-us {
+    color: white;
+    width: 70%;
+    margin-inline: auto;
 
+    display: grid;
+    grid-template-columns: 2fr 3fr;
+
+    row-gap: 2.5rem;
+    column-gap: 2rem;
+    margin-block: 1rem;
+}
+.title {
+    grid-column-start: span 2;
+    justify-self: center;
+    text-align: center;
+}
+
+.about-us h2 {
+    text-align: right;
+}
+
+p {
+    padding-bottom: 0.5rem;
+}
+
+@media all and (max-width: 768px) {
+    .about-us {
+	grid-template-columns: 1fr;
+	width: 80%;
+	row-gap: 1.5rem;
+    }
+    .about-us h2 {
+	text-align: center;
+    }
+    .about-us .title {
+	grid-column-start: 1;
+    }
+    p {
+	text-align: center;
+    }
+}
 /* about us end  */
