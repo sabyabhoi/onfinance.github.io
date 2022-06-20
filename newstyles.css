@@ -5,6 +5,9 @@
     padding: 0;
     box-sizing: border-box;
 }
+html {
+    scroll-behavior: smooth;
+}
 body{
     background: #0a0823;
 
@@ -335,7 +338,7 @@ a{
     width: 16rem;
     height: 8rem;
     padding: 1rem;
-    margin: 1.5rem;
+    margin: 1.75rem;
     border-radius: 7px;
     display: flex;
     flex-direction: column;
@@ -499,11 +502,15 @@ a{
     height: 18rem;
     transition: all 0.1s ease-out;
     position: relative;
+
+    /* vanilla tilt  */
+    transform-style: preserve-3d;
+    transform: perspective(1000px);
 }
 
 .card-bg {
     position: absolute;
-    color: rgba(255, 255, 255, 0.02);
+    color: rgba(255, 255, 255, 0.03);
     font-weight: bold;
     bottom: -10px;
     right: 10px;
@@ -511,14 +518,9 @@ a{
     user-select: none;
 }
 
-.card:hover  {
-    scale: 107%;
-    z-index: 1;
-    transition: all 0.1s ease-in;
-}
-
 .card:hover .card-bg {
-    color: rgba(255, 255, 255, 0.05);
+    color: rgba(255, 255, 255, 0.07);
+    transform: translateZ(5px);
 }
 
 .card img {
@@ -529,6 +531,10 @@ a{
     object-fit: cover;
     object-position: 0 0;
     border-radius: 50%;
+}
+.card h3, .card h5 , .card p , .card img {
+    /* vanilla tilt  */
+    transform: translateZ(10px);
 }
 
 .contacts {
