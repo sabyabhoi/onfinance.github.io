@@ -466,5 +466,31 @@ a{
 /* contact-us  */
 .contact-us {
     padding-block: 2rem;
+    width: 70%;
+}
+
+.team {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+
+.card {
+    background-color: rgba(168, 170, 188, 0.3);
+    box-shadow: 6px 6px 10px black;
+    border-radius: 5%;
+    display: flex;
+    flex-direction: column;
+    row-gap: 1rem;
+    padding: 1rem 1rem 2rem 1rem;
+}
+
+.card img {
+    width: 64px;
+    height: 64px;
+    position: relative;
+    top: -25px;
+    object-fit: cover;
+    object-position: 0 -20%;
 }
 /* contact-us end */
