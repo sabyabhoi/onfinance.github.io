@@ -301,29 +301,30 @@ a{
 }
 .phonescreenft{
     position: relative;
-    width: 20rem;
-    height: 33.3rem;
-    border-radius: 1rem;
+    width: 18rem;
+    height: 33.7rem;
+    border-radius: 2rem;
     overflow: hidden;
 }
 .ftframe{
     position: absolute;
     top: 0rem;
     left: 0rem;
-    width:20rem;
+    width:18rem;
     z-index: 4;
 }
 .featimager{
     position: absolute;
     top: 0.5rem;
-    left: 2.7rem;
-    width: 14.6rem;
-    height: 32rem;
+    left: 1.5rem;
+    width: 15rem;
+    height: 32.5rem;
     overflow: hidden;
     z-index: 2;
+    border-radius: 1rem;
 }
 .ftimg{
-    width: 14.6rem;
+    width: 15rem;
 }
 .featcontainer{
     width: 60%;

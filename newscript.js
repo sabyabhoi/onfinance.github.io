@@ -5,13 +5,13 @@ const featurescreen = document.querySelector('.ftimg');
 //for on scroll animation
 window.addEventListener('scroll', () => {
     var value = window.scrollY;
-    // console.log(value);
+    console.log(value);
     if (value > 0 && value < 387 ) {
         walletElement.style.transform = `translate(0,-${(value)/1.5}px) rotate(-10deg)`;
         ethCoin.style.transform = `translate(0,${(value)/1.5}px) rotate(10deg)`;
     }
-    if(value > 600 && value < 910){
-        featurescreen.style.transform = `translate(0,-${(value-600)/3}px)`;
+    if(value > 600 && value < 1140){
+        featurescreen.style.transform = `translate(0,-${(value-600)}px)`;
     }
 });
 
