@@ -75,9 +75,12 @@ a{
     cursor: pointer;
 }
 .navlink:hover{
-    background: -webkit-linear-gradient(135deg,
+    /* background: -webkit-linear-gradient(135deg,
                 rgba(65, 220, 101, 1) 0%,
-                rgba(62, 195, 213, 1) 100%);
+                rgba(62, 195, 213, 1) 100%); */
+
+    background: linear-gradient(90deg, #00DBDE 0%, #FC00FF 100%);
+
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
 }
@@ -145,9 +148,13 @@ a{
 .tlineg{
     font-size: 3rem;
     font-weight: 600;
-    background: -webkit-linear-gradient(135deg,
+    /* background: -webkit-linear-gradient(135deg,
                 rgba(65, 220, 101, 1) 0%,
-                rgba(62, 195, 213, 1) 100%);
+                rgba(62, 195, 213, 1) 100%); */
+
+    background: linear-gradient(90deg, #00DBDE 0%, #FC00FF 100%);
+    
+
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
 }
@@ -329,27 +336,38 @@ a{
 .featpoint{
     font-size: 1.5rem;
     font-weight: 700;
-    /* background: radial-gradient(ellipse at center top, #784bff 0%, #784bff00 130%); */
 
-    /* background-image: radial-gradient(ellipse at center top, #000000 0%, #0a0823 100%); */
+    padding: 5px;
 
-    background-image: radial-gradient(ellipse at center top, #6159D9, #342ABB);
-
-    width: 16rem;
-    height: 8rem;
-    padding: 1rem;
     margin: 1.75rem;
-    border-radius: 7px;
+    /* border-radius: 7px; */
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
     box-shadow: 6px 6px 10px #000000;
-    position: relative;
 
     /* vanilla tilt  */
     transform-style: preserve-3d;
     transform: perspective(1000px);
+}
+.featpoint:hover{
+    background: linear-gradient(90deg, #00DBDE 0%, #FC00FF 100%);
+}
+.featurepoint{
+    background: radial-gradient(#0D0A2E 0%, #000000 150%);
+    /* border-radius: 7px; */
+    width: 16rem;
+    height: 8rem;
+    padding: 1rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+
+    /* vanilla tilt  */
+    transform: translateZ(10px);
 }
 .ftimage{
     top:-3rem;
@@ -359,7 +377,7 @@ a{
     width:6rem;
 
     /* vanilla tilt  */
-    transform: translateZ(10px);
+    transform: translateZ(20px);
 }
 
 @media screen and (max-width: 980px) {
@@ -440,15 +458,17 @@ a{
     font-size: 1.5rem;
 }
 .aboutpt:hover{
-    background: linear-gradient(135deg, rgba(65, 220, 101, 1) 0%, rgba(62, 195, 213, 1) 100%);
+    /* background: linear-gradient(135deg, rgba(65, 220, 101, 1) 0%, rgba(62, 195, 213, 1) 100%); */
+    background: linear-gradient(90deg, #00DBDE 0%, #FC00FF 100%);
 }
 .aboutpt:hover .abtpoint{
     border: 1px solid #0a0823;
 }
 .aboutpt:hover .abtpoint .abtfeild .feildtxt{
-    background: -webkit-linear-gradient(135deg,
+    /* background: -webkit-linear-gradient(135deg,
                 rgba(65, 220, 101, 1) 0%,
-                rgba(62, 195, 213, 1) 100%);
+                rgba(62, 195, 213, 1) 100%); */
+    background: linear-gradient(90deg, #00DBDE 0%, #FC00FF 100%);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
 }
