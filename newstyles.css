@@ -15,6 +15,7 @@ body{
     width: 100vw;
     min-height: 300vh;
     overflow-x: hidden;
+    color: white;
 }
 a{
     text-decoration: none;
@@ -34,7 +35,6 @@ a{
 .hamburger{
     font-size: 2rem;
     display: none;
-    color: white;
     z-index: 7;
 }
 .OnfinanceHeader {
@@ -50,7 +50,6 @@ a{
 .headername{
     font-size: 1.8rem;
     font-weight: 700;
-    color: rgb(255,255,255);
 }
 .navoptions{
     display: flex;
@@ -121,7 +120,6 @@ a{
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
-    color: white;
     padding: 1rem 5rem;
 }
 .taglines{
@@ -258,14 +256,15 @@ a{
 
 
 /* features */
+.pt {
+    padding-top: 4rem;
+}
 
-.featTitle{
-    color: white;
+.title {
     font-size: 2.2rem;
     font-weight: 700;
-    padding-top: 4rem;
-    padding-bottom: 5px;
     border-bottom: 1px solid white;
+    padding-bottom: 0.5rem;
 }
 
 .features{
@@ -322,7 +321,6 @@ a{
 .featpoint{
     font-size: 1.5rem;
     font-weight: 700;
-    color: white;
     background: radial-gradient(ellipse at center top, #784bff 0%, #784bff00 130%);
     width: 16rem;
     height: 8rem;
@@ -392,22 +390,17 @@ a{
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    color: white;
 }
 .abttitle{
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    padding-bottom: 1rem;
 }
 .abtimg{
     width:5rem;
     margin:0.5rem;
-}
-.aboutttitle{
-    font-size: 2.2rem;
-    font-weight: 700;
-    margin-bottom: 0.5rem;
 }
 .aboutpt{
     width: 70%;
@@ -452,7 +445,7 @@ a{
         width: 4rem;
     }
 
-    .aboutttitle {
+    .title {
         font-size: 1.8rem;
     }
     .aboutpt{
@@ -469,3 +462,35 @@ a{
 }
 
 /* about us end  */
+
+/* contact-us  */
+.contact-us {
+    padding-block: 2rem;
+    width: 70%;
+}
+
+.team {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+
+.card {
+    background-color: rgba(168, 170, 188, 0.3);
+    box-shadow: 6px 6px 10px black;
+    border-radius: 5%;
+    display: flex;
+    flex-direction: column;
+    row-gap: 1rem;
+    padding: 1rem 1rem 2rem 1rem;
+}
+
+.card img {
+    width: 64px;
+    height: 64px;
+    position: relative;
+    top: -25px;
+    object-fit: cover;
+    object-position: 0 -20%;
+}
+/* contact-us end */
