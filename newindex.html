@@ -13,6 +13,21 @@
         <link rel="shortcut icon" type="image/ico" href="images/onfinance_mainlogo.png" />
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
         <!-- Plugin-CSS -->
+        <link
+            rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css"
+            integrity="sha512-tS3S5qG0BlhnQROyJXvNjeEM4UpMXHrQfTGmbQ1gKmelCxlSEBUaxhRBj/EFTzpbP4RVSrpEikbmdJobCvhE3g=="
+            crossorigin="anonymous"
+            referrerpolicy="no-referrer"
+        />
+        <link
+            rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.css"
+            integrity="sha512-OTcub78R3msOCtY3Tc6FzeDJ8N9qvQn1Ph49ou13xgA9VsH9+LRxoFU6EqLhW4+PKRfU+/HReXmSZXHEkpYoOA=="
+            crossorigin="anonymous"
+            referrerpolicy="no-referrer"
+        />
+        <!-- Main-CSS -->
         <link rel="stylesheet" href="newstyles.css" />
         <!-- plugin JS -->
         <script defer src="./newscript.js"></script>
@@ -126,29 +141,34 @@
 
         <!-- gallery -->
         <div class="gallery">
-            <button class="leftgallery"><i class="fa fa-angle-left"></i></button>
-            <button class="rightgallery"><i class="fa fa-angle-right"></i></button>
-            <div class="gallerycontainer">
-                <div class="galleryBox gb5pree">
-                    <img class="galleryimg" src="./images/Notifications_iphone13prosierrablue_portrait.png" alt="" />
+            <div class="owl-carousel owl-theme">
+                <div class="item">
+                    <img src="./images/Search Result_iphone13prosierrablue_portrait.png" alt="" />
                 </div>
-                <div class="galleryBox gb1">
-                    <img class="galleryimg" src="./images/Search Result_iphone13prosierrablue_portrait.png" alt="" />
+                <div class="item">
+                    <img src="./images/Home_iphone13prosierrablue_portrait.png" alt="" />
                 </div>
-                <div class="galleryBox gb2">
-                    <img class="galleryimg" src="./images/Home_iphone13prosierrablue_portrait.png" alt="" />
+                <div class="item">
+                    <img src="./images/Portfolio_iphone13prosierrablue_portrait.png" alt="" />
                 </div>
-                <div class="galleryBox gb3">
-                    <img class="galleryimg" src="./images/Portfolio_iphone13prosierrablue_portrait.png" alt="" />
+                <div class="item">
+                    <img src="./images/Onboarding (1)_iphone13prosierrablue_portrait.png" alt="" />
                 </div>
-                <div class="galleryBox gb4">
-                    <img class="galleryimg" src="./images/Onboarding (1)_iphone13prosierrablue_portrait.png" alt="" />
+                <div class="item">
+                    <img src="./images/Notifications_iphone13prosierrablue_portrait.png" alt="" />
                 </div>
-                <div class="galleryBox gb5">
-                    <img class="galleryimg" src="./images/Notifications_iphone13prosierrablue_portrait.png" alt="" />
-                </div>
-                <div class="galleryBox gb1pree">
-                    <img class="galleryimg" src="./images/Search Result_iphone13prosierrablue_portrait.png" alt="" />
+            </div>
+            <div class="galleryinfo">
+                <div class="gallerytitle">What OnFinance Offers</div>
+                <div class="gallerybox">
+                    <div class="galleryinfobox">
+                        <div class="galleryheadingbox">
+                            <div class="galleryinfoheading">A One-stop Destination</div>
+                        </div>
+                        <div class="galleryinfotext">
+                            For the daily market news and content analytics covering over 40+ financial topics from more than 200+ sources optimized for the indian markets ecosystem.
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
@@ -237,6 +257,39 @@
         </div>
         <!-- contact us end-->
         <!-- scripts -->
+        <script
+            src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"
+            integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ=="
+            crossorigin="anonymous"
+            referrerpolicy="no-referrer"
+        ></script>
+        <script
+            src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"
+            integrity="sha512-bPs7Ae6pVvhOSiIcyUClR7/q2OAsRiovw4vAkX+zJbw3ShAeeqezq50RIIcIURq7Oa20rW2n2q+fyXBNcU9lrw=="
+            crossorigin="anonymous"
+            referrerpolicy="no-referrer"
+        ></script>
+        <script>
+            $(".owl-carousel").owlCarousel({
+                items: 5,
+                loop: true,
+                // margin: 10,
+                nav: false,
+                dots: true,
+                autoplay: true,
+                autoplayTimeout: 2500,
+                responsive: {
+                    0: {
+                        items: 1,
+                        center: true,
+                    },
+                    1180: {
+                        items: 3,
+                        center: true,
+                    },
+                },
+            });
+        </script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/vanilla-tilt/1.7.1/vanilla-tilt.min.js"></script>
     </body>
 </html>
