@@ -67,8 +67,8 @@ a{
     margin: 0 1rem;
 }
 .navlink{
-    font-size: 1.2rem;
-    font-weight: 500;
+    font-size: 1.1rem;
+    font-weight: 400;
     color: rgb(255,255,255);
     text-decoration: none;
     margin: 0 1rem;
@@ -145,13 +145,8 @@ a{
 .tlineg{
     font-size: 3rem;
     font-weight: 600;
-    /* background: -webkit-linear-gradient(135deg,
-                rgba(65, 220, 101, 1) 0%,
-                rgba(62, 195, 213, 1) 100%); */
 
     background: linear-gradient(90deg, #00DBDE 0%, #FC00FF 100%);
-    
-
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
 }
@@ -420,12 +415,18 @@ a{
     flex-direction: row;
     justify-content: center;
     align-items: center;
+    background-image: url(./images/gradient\ bg4.png) ;
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+    position: relative;
 }
 .owl-carousel{
     width: 60%;
 }
 .item{
     width: 16rem;
+    position: relative;
 }
 .galleryinfo{
     width:40%;
@@ -441,52 +442,21 @@ a{
     font-weight: 700;
     border-bottom: 1px solid white;
     padding-bottom: 0.5rem;
-    margin-bottom: 4rem;
+    margin-bottom: 2rem;
+}
+.gallerytitle:hover{
+    background: linear-gradient(90deg, #00DBDE 0%, #FC00FF 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
 }
 .gallerybox{
     width: 93%;
     padding: 2px;
     border-radius: 7px;
 }
-.galleryinfobox{
-    border: 1px dashed white;
-    border-radius: 7px;
-    width: 100%;
-    padding: 2rem 1.5rem;
-    position: relative;
-    background: #0a0823;
-}
-.galleryheadingbox{
-    background-color: #0a0823;
-    font-size: 1.5rem;
-    font-weight: 600;
-    margin-bottom: 1rem;
-    position: absolute;
-    top: -1rem;
-    left: 1rem;
-    padding: 0 10px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-.galleryinfoheading{
-    color: white;
-    background-color: #0a0823;
-}
 .galleryinfotext {
     font-size: 1.2rem;
     font-weight: 500;
-}
-.gallerybox:hover{
-    background:linear-gradient(90deg, #00DBDE 0%, #FC00FF 100%) ;
-}
-.gallerybox:hover .galleryinfobox{
-    border: 1px solid #0a0823;
-}
-.gallerybox:hover .galleryinfobox .galleryheadingbox .galleryinfoheading{
-    background: linear-gradient(90deg, #00DBDE 0%, #FC00FF 100%);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
 }
 @media screen and (max-width: 1180px) {
     .owl-carousel {
@@ -523,9 +493,6 @@ a{
     .gallerytitle {
         font-size: 1.6rem;
     }
-    .galleryheadingbox {
-        font-size: 1.3rem;
-    }
 }
 
 /* gallery end  */
@@ -536,6 +503,7 @@ a{
     margin-top: 3rem;
     width: 100vw;
     max-width: 80rem;
+    min-height: 100vh;
     display: flex;
     flex-direction: column;
     justify-content: center;
