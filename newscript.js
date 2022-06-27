@@ -17,8 +17,12 @@ window.addEventListener('scroll', () => {
 
 const hamburger = document.querySelector('.hamburger');
 const navmodal = document.querySelector('.navoptions');
+const BarsIcon = document.querySelector('.fa-bars');
+const CloseIcon = document.querySelector('.fa-close');
 
 hamburger.addEventListener('click', () => {
     navmodal.classList.toggle('navmodal-active');
+    BarsIcon.classList.toggle('hidden');
+    CloseIcon.classList.toggle('hidden');
 });
 

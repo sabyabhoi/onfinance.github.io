@@ -45,6 +45,9 @@ a{
     display: none;
     z-index: 7;
 }
+.hidden{
+    display: none;
+}
 .OnfinanceHeader {
     display: flex;
     flex-direction: row;
@@ -402,6 +405,9 @@ a{
         margin-right: 1rem;
         transform: scale(0.9);
     }
+    .featpoint:hover {
+        background: #0a0823;
+    }
 }
 /* features end  */
 
@@ -497,6 +503,10 @@ a{
 
 /* gallery end  */
 
+/* testimonials */
+
+
+/* testimonials end */
 
 /* about us */
 .aboutpart{
@@ -533,14 +543,6 @@ a{
     position: relative;
     background: #0a0823;
 }
-.abtfeild{
-    font-size: 1.8rem;
-    font-weight: 700;
-    padding: 0 0.5rem;
-    background: #0a0823;
-    position: absolute;
-    top:-1.4rem;
-}
 .abtline{
     font-size: 1.5rem;
 }
@@ -567,11 +569,6 @@ a{
     .aboutpt{
         width: 80%;
     }
-    .abtfeild {
-        font-size: 1.5rem;
-        top: -1.1rem;
-    }
-
     .abtline {
         font-size: 1.2rem;
     }
