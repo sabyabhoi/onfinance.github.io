@@ -26,3 +26,70 @@ hamburger.addEventListener('click', () => {
     CloseIcon.classList.toggle('hidden');
 });
 
+// carousel
+
+$(document).ready(function(){
+
+    $(".gallerycarousel").owlCarousel({
+        loop: true,
+        nav: false,
+        dots: true,
+        autoplay: true,
+        autoplayTimeout: 2500,
+        autoplayHoverPause: true,
+        center: true,
+        responsive: {
+            0: {
+                items: 1,
+            },
+            1180: {
+                items: 3,
+            },
+        },
+    });
+    $(".testcarousel").owlCarousel({
+        loop: true,
+        nav: false,
+        dots: true,
+        margin: 10,
+        autoplay: true,
+        autoplayTimeout: 2500,
+        autoplayHoverPause: true,
+        center: true,
+        responsive: {
+            0: {
+                items: 1,
+                stagePadding: 0,
+            },
+            550:{
+                items: 1,
+                stagePadding: 100,
+            },
+            650:{
+                items: 1,
+                stagePadding: 150,
+            },
+            750:{
+                items: 1,
+                stagePadding: 200,
+            },
+            850:{
+                items: 1,
+                stagePadding: 250,
+            },
+            950:{
+                items: 1,
+                stagePadding: 300,
+            },
+            1100: {
+                items: 3,
+                stagePadding: 20,
+            },
+            1200:{
+                items: 3,
+                stagePadding: 70,
+            }
+        },
+    });
+    
+});

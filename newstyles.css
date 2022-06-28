@@ -427,10 +427,10 @@ a{
     background-repeat: no-repeat;
     position: relative;
 }
-.owl-carousel{
+.gallerycarousel{
     width: 60%;
 }
-.item{
+.galleryitem{
     width: 16rem;
     position: relative;
 }
@@ -465,10 +465,10 @@ a{
     font-weight: 500;
 }
 @media screen and (max-width: 1180px) {
-    .owl-carousel {
+    .gallerycarousel {
         width: 18rem;
     }
-    .item {
+    .galleryitem{
         width: 18rem;
     }
     .galleryinfo {
@@ -476,10 +476,10 @@ a{
     }
 }
 @media screen and (max-width: 820px) {
-    .owl-carousel {
+    .gallerycarousel {
         width: 20rem;
     }
-    .item {
+    .galleryitem{
         width: 20rem;
     }
     .gallerytitle {
@@ -504,8 +504,90 @@ a{
 /* gallery end  */
 
 /* testimonials */
+.testimonials{
+    width: 100vw;
+    max-width: 80rem;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.testTitle{
+    font-size: 2.2rem;
+    font-weight: 700;
+    margin-bottom: 2rem;
+    padding: 10px;
+    padding-bottom: 5px;
+    border-bottom: 1px solid white;
+}
+.testcarousel{
+    width:100%;
+}
+.testitem{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+.testbox{
+    width: 22rem;
+    height: 8rem;
 
+    background: radial-gradient(140.69% 286.82% at 84.33% -29.29%, rgba(255, 255, 255, 0.4) 0%, rgba(255, 255, 255, 0.4) 0.01%, rgba(255, 255, 255, 0.14) 0.02%, rgba(255, 255, 255, 0) 99.97%, rgba(255, 255, 255, 0.1) 99.98%, rgba(255, 255, 255, 0) 99.99%);
+    box-shadow: inset -5px -5px 250px rgba(255, 255, 255, 0.01);
+    backdrop-filter: blur(42px);
 
+    border-radius: 15px;
+
+    padding: 1rem 1rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+.testimage{
+    width: 6rem;
+    height: 6rem;
+    border-radius: 50%;
+    overflow: hidden;
+
+    background-color: #000000;
+}
+.testcontent{
+    width: 10rem;
+    height: 6rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+.testcomment{
+    font-size: 0.8rem;
+    font-weight: 500;
+    word-wrap: break-word;
+}
+.testauthor{
+    font-size: 0.7rem;
+    font-weight: 500;
+}
+
+.testimonials .center .testbox {
+    height: 9.5rem;
+}
+.testimonials .owl-stage{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+@media screen and (min-width:1100px) {
+    .testimonials .active .testbox {
+        height: 9rem;
+    }
+}
 /* testimonials end */
 
 /* about us */
