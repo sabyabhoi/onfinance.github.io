@@ -11,7 +11,6 @@ html {
 body{
     background: #0a0823;
 
-
     /* font-family: 'Lato', sans-serif; */
     font-family: 'Montserrat', sans-serif;
     /* font-family: 'Open Sans', sans-serif; */
@@ -916,38 +915,108 @@ a{
 }
 /* contact-us end */
 
+.footer-container {
+    box-shadow: inset 0 8px 6px -6px black;
+    width: 100%;
+    background-image: linear-gradient(to top right, #1d1a37, #141226);
+    background-color: #1d1a37;
+}
+
 footer {
-    display: flex;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(4, 1fr);
+    width: 80%;
+    margin-inline: auto;
+    justify-items: center;
+    padding-block: 1rem;
+    align-items: center;
+    gap: 2rem;
+/*    display: flex;
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
-    width: 80%;
+    width: 100%;
     padding-top: 2rem;
     padding-bottom: 0.75rem;
+    padding-inline: 10rem;*/
+}
+
+footer img {
+    grid-row-start: span 2;
+    width: 64px;
+    height: 64px;
+}
+
+footer h2 {
+    border-bottom: 2px solid #33304b;
+}
+
+footer h2:hover {
+    border-bottom: 2px solid white;
+    transition-duration: 200ms;
+} 
+
+#footer-title {
+    grid-column-start: span 3;
+    font-size: 2.5rem;
+    text-align: center;
+}
+
+#footer-email {
+    grid-row-start: span 2;
+    line-height: 2;
+    display: flex;
+    flex-direction: row;
+    column-gap: 1rem;
+    align-items: center;
+}
+
+#footer-email i,#footer-phone i {
+    width: 24px;
+    height: 24px;
+    font-size: 24px;
+}
+
+#footer-phone {
+    grid-row-start: span 2;
+    text-align: center;
+    line-height: 2;
 }
 
 .contacts {
+    padding: 1.5rem 0 0.5rem 0;
+    grid-column-start: span 3;
+    border-top: 2px solid #33304b;
     display: flex;
     flex-direction: row;
     justify-content: space-evenly;
     align-items: center;
-    width: 30%;
+    width: 100%;
 }
 
-#twitter {
+#twitter, #youtube, #instagram, #linkedin {
+    color: #706e81;
+}
+
+#twitter:hover {
     color: #1DA1F2;
+    transition-duration: 200ms;
 }
 
-#youtube {
+#youtube:hover {
     color: #CC0000;
+    transition-duration: 200ms;
 }
 
-#instagram {
+#instagram:hover {
     color: #8a3ab9;
+    transition-duration: 200ms;
 }
 
-#linkedin {
+#linkedin:hover {
     color: #0077b5;
+    transition-duration: 200ms;
 }
 
 .contacts a i {
