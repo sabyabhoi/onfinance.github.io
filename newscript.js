@@ -15,6 +15,25 @@ window.addEventListener('scroll', () => {
     }
 });
 
+// popup
+
+const popup = document.querySelector('.popupBox');
+const popupclose = document.querySelector('.popupclosebtn');
+// const popupopen = document.querySelector('.specialRewards');
+
+// popupopen.addEventListener('click', () => {
+//     popup.classList.remove('hidden');
+// });
+
+const OpenPopup = () => {
+    popup.classList.remove('hidden');
+}
+
+popupclose.addEventListener('click', () => {
+    popup.classList.add('hidden');
+    console.log("popup")
+});
+
 const hamburger = document.querySelector('.hamburger');
 const navmodal = document.querySelector('.navoptions');
 const BarsIcon = document.querySelector('.fa-bars');
@@ -92,18 +111,6 @@ $(document).ready(function(){
         },
     });
     
+    setTimeout(OpenPopup,3000);
 });
 
-// popup
-
-const popup = document.querySelector('.popupBox');
-const popupclose = document.querySelector('.popupclosebtn');
-const popupopen = document.querySelector('.specialRewards');
-
-popupopen.addEventListener('click', () => {
-    popup.classList.remove('hidden');
-});
-
-popupclose.addEventListener('click', () => {
-    popup.classList.add('hidden');
-});
