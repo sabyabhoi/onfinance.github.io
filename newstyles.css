@@ -31,7 +31,7 @@ a{
 .popupBox{
     width: 84%;
     max-width: 67rem;
-    height: 30rem;
+    height: 85vh;
     z-index: 10;
 
     background: radial-gradient(100% 315.97%, rgba(255, 255, 255, 0.04) 0%, rgba(255, 255, 255, 0.26) 0.01%, rgba(255, 255, 255, 0.04) 51.44%, rgba(255, 255, 255, 0.1) 100%, rgba(255, 255, 255, 0.3) 100%, rgba(255, 255, 255, 0.16) 100%);
@@ -57,7 +57,7 @@ a{
     font-size: 2rem;
     position: absolute;
     top: 1rem;
-    right:2rem;
+    right:1rem;
 }
 .popupimage{
     width: 55%;
@@ -127,6 +127,48 @@ a{
     font-size: 1.2rem;
     font-weight: 600;
 }
+@media screen and (max-width:1080px) {
+    .popuptext {
+        font-size: 1.2rem;
+    }
+}
+@media screen and (max-width:800px) {
+    .popupBox{
+        flex-direction: column;
+        padding: 2rem;
+        padding-top: 1rem;
+    }
+    .popupimage {
+        height: 50%;
+        width: auto;
+    }
+    .popupimg{
+        height: 100%;
+        width: auto;
+    }
+    .popupcontent {
+        width: 95%;
+    }
+    .popuptext {
+        font-size: 1.2rem;
+        margin-bottom: 0.5rem;
+    }
+}
+@media screen and (max-width:500px) {
+    .popupBox {
+        height: 90vh;
+    }
+
+    .popupimage {
+        height: 40%;
+        width: auto;
+    }
+    .popuptext {
+        font-size: 1.1rem;
+    }
+}
+
+/* nav  */
 .nav{
     width: 100vw;
     max-width: 80rem;
