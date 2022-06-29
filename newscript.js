@@ -93,3 +93,17 @@ $(document).ready(function(){
     });
     
 });
+
+// popup
+
+const popup = document.querySelector('.popupBox');
+const popupclose = document.querySelector('.popupclosebtn');
+const popupopen = document.querySelector('.specialRewards');
+
+popupopen.addEventListener('click', () => {
+    popup.classList.remove('hidden');
+});
+
+popupclose.addEventListener('click', () => {
+    popup.classList.add('hidden');
+});

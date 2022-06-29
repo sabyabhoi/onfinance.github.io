@@ -28,6 +28,105 @@ body{
 a{
     text-decoration: none;
 }
+.popupBox{
+    width: 84%;
+    max-width: 67rem;
+    height: 30rem;
+    z-index: 10;
+
+    background: radial-gradient(100% 315.97%, rgba(255, 255, 255, 0.04) 0%, rgba(255, 255, 255, 0.26) 0.01%, rgba(255, 255, 255, 0.04) 51.44%, rgba(255, 255, 255, 0.1) 100%, rgba(255, 255, 255, 0.3) 100%, rgba(255, 255, 255, 0.16) 100%);
+    box-shadow: inset -5px -5px 250px rgba(255, 255, 255, 0.02);
+    backdrop-filter: blur(3px);
+
+    border-radius: 20px;
+
+    position: fixed;
+    top: 4rem;
+    left: auto;
+    right: auto;
+
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 2rem;
+    padding-left: 1rem;
+    padding-right: 3rem;
+}
+.popupclosebtn{
+    font-size: 2rem;
+    position: absolute;
+    top: 1rem;
+    right:2rem;
+}
+.popupimage{
+    width: 55%;
+}
+.popupimg{
+    width: 100%;
+}
+.popupcontent{
+    width: 45%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.popuptext{
+    font-size: 1.5rem;
+    font-weight: 600;
+    margin-bottom: 2rem;
+    text-align: center;
+}
+.popupfeild{
+    width: 95%;
+    height: 2.7rem;
+    background: rgba(217, 217, 217, 0.7);
+    border: 3px solid #BCBBC3;
+    box-shadow: inset 0px 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 10px;
+    color: white;
+    font-size:1rem ;
+    font-weight: 600;
+    padding: 1rem;
+    margin-bottom: 1rem;
+}
+.popupbtn{
+    background: rgba(255, 255, 255, 0.7);
+    width: 10rem;
+    padding: 0.5rem;
+    border-radius: 20px;
+    font-size: 1.2rem;
+    font-weight: 600;
+    border:0;
+}
+.specialRewards{
+    padding: 2px;
+    background: linear-gradient(90deg, #00DBDE 0%, #FC00FF 100%);
+    margin-top: 1rem;
+    border-radius: 10px;
+}
+.rewardbox{
+    width: 15rem;
+    background:black;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    padding: 0.5rem;
+    border-radius: 10px;
+}
+.rewardlogo{
+    width:2.5rem;
+    margin-right: 0.5rem;
+}
+.rewardlogoimg{
+    width: 100%;
+}
+.rewardtext{
+    font-size: 1.2rem;
+    font-weight: 600;
+}
 .nav{
     width: 100vw;
     max-width: 80rem;
