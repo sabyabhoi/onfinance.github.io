@@ -53,7 +53,7 @@ $(document).ready(function(){
         dots: true,
         margin: 10,
         autoplay: true,
-        autoplayTimeout: 2500,
+        autoplayTimeout: 1500,
         autoplayHoverPause: true,
         center: true,
         responsive: {

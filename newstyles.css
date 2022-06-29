@@ -531,11 +531,32 @@ a{
     align-items: center;
     position: relative;
     margin-bottom: 4rem;
+    padding-top: 2rem;
+}
+.testboxout{
+    padding: 5px;
+    background: #0a0823;
+    position: relative;
+    border-radius: 10px;
+    z-index: 1;
+
+    /* vanilla tilt  */
+    transform-style: preserve-3d;
+    transform: perspective(1000px);
+}
+.testboxbackdrop{
+    width: 22rem;
+    height: 8rem;
+    position: absolute;
+    top: 5px;
+    left: 5px;
+    background: #0a0823;
+    border-radius: 8px;
+    z-index: 3;
 }
 .testbox{
     width: 22rem;
     height: 8rem;
-
     background: radial-gradient(140.69% 286.82% at 84.33% -29.29%, rgba(255, 255, 255, 0.4) 0%, rgba(255, 255, 255, 0.4) 0.01%, rgba(255, 255, 255, 0.14) 0.02%, rgba(255, 255, 255, 0) 99.97%, rgba(255, 255, 255, 0.1) 99.98%, rgba(255, 255, 255, 0) 99.99%);
     box-shadow: inset -5px -5px 250px rgba(255, 255, 255, 0.01);
     backdrop-filter: blur(42px);
@@ -550,6 +571,10 @@ a{
 
     position: relative;
     z-index: 5;
+
+    /* vanilla tilt  */
+    transform: translateZ(10px);
+    
 }
 .testlight{
     width: 24rem;
@@ -568,6 +593,9 @@ a{
     overflow: hidden;
 
     background-color: #362E9B;
+
+    /* vanilla tilt  */
+    transform: translateZ(30px);
 }
 .testcontent{
     width: 10rem;
@@ -576,6 +604,8 @@ a{
     flex-direction: column;
     justify-content: space-between;
     align-items: center;
+    /* vanilla tilt  */
+    transform: translateZ(30px);
 }
 .testcomment{
     font-size: 0.8rem;
@@ -591,16 +621,29 @@ a{
     .testimonials .active .testbox {
         height: 9.5rem ;
     }
+    .testimonials .active .testboxbackdrop {
+        height: 9.5rem;
+    }
 }
 
 .testimonials .center .testbox {
     height: 10.5rem ;
+}
+.testimonials .center .testboxbackdrop {
+    height: 10.5rem;
 }
 .testimonials .owl-stage{
     display: flex;
     flex-direction: row;
     justify-content: center;
     align-items: center;
+}
+
+.testboxout:hover{
+    background: linear-gradient(90deg, #00DBDE 0%, #FC00FF 100%);
+}
+.testboxout:hover .testbox {
+    background: #0a0823;
 }
 
 /* testimonials end */
